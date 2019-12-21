@@ -1,3 +1,6 @@
+---
+sidebarDepth : 0
+---
 # [回顾ES5新增的数组方法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ## 1、every(currentValue[当前元素],index[索引],arr[引用数组]) 测试断言函数是否对每个数组元素都为真。

@@ -1,5 +1,11 @@
+---
+sidebarDepth : 0
+---
 
-```
+# node.js下mongoose简单操作实例.md
+
+```javascript
+
 // mongoose 链接
 var mongoose = require('mongoose');
 var db       = mongoose.createConnection('mongodb://127.0.0.1:27017/NodeJS'); 
@@ -8,7 +14,7 @@ var db       = mongoose.createConnection('mongodb://127.0.0.1:27017/NodeJS');
 
 
 
-```
+```javascript
 // Schema 结构
 var mongooseSchema = new mongoose.Schema({
     username : {type : String, default : '匿名用户'},

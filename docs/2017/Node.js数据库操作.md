@@ -1,6 +1,10 @@
+---
+sidebarDepth : 0
+---
+
 # Node.js数据库操作
 
-[toc]
+[[toc]]
 
 [参考文档](http://blog.fens.me/nodejs-mysql-intro/)
 ## 安装

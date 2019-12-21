@@ -76,6 +76,93 @@ app-header/
 - trackBy支持带自定义函数处理
 
 
+## 条件判断 *ngIf
+
+```javascript
+
+<p *ngIf="list.length > 3">这是 ngIF 判断是否显示</p>
+
+<p template="ngIf flag">这是 ngIF 判断是否显示</p>
+
+```
+
+## switch结构*ngSwitch
+
+```javascript
+
+<ul [ngSwitch]="score"> 
+    <li *ngSwitchCase="1">安装</li> 
+    <li *ngSwitchCase="2">安装中</li> 
+    <li *ngSwitchCase="3">已安装</li> 
+    <li *ngSwitchDefault>未安装</li> 
+</ul>
+
+```
+
+## 事件处理
+
+```javascript
+
+<button class="button" (click)="handle1()"> 点击按钮触发事件1 </button> 
+<button class="button" (click)="handle2()"> 点击按钮触发事件2 </button>
+
+```
 
 
+## 表单事件
 
+```javascript
+
+<input type="text" (keyup)="keyFn($event)"/>
+
+
+```
+
+```javascript
+
+
+// 方法
+keyFn(e){ console.log(e) }
+
+```
+
+
+## 双向数据绑定
+
+<input [(ngModel)]="inputValue">
+
+```javascript
+
+import { FormsModule } from '@angular/forms';
+
+```
+
+```javascript
+
+<input type="text" [(ngModel)]="inputValue"/> 
+
+跟踪显示：{{inputValue}}
+
+```
+
+## [ngClass]、[ngStyle]
+
+
+```javascript
+//ngClass
+<div [ngClass]="{'class1': true, 'class2': false}"> 这是一个 div </div>
+
+// ngStyle
+<div [ngStyle]="{'background-color':'yellow'}">ngStyle 背景颜色</div>
+```
+
+## 管道
+angular中的管道类似Vue中的过滤器，首先必须声明一个管道方法，然后在模板中使用
+
+- 自带的管道
+
+- 另外一种自定义的管道，需要先声明引入。
+
+```javascript
+<p>{{ new Date()| date:'yyyy-MM-dd HH:mm:ss' }}</p>
+```

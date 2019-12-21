@@ -9,7 +9,7 @@ module.exports = {
     // port: '9300',
     themeConfig: {
         lastUpdated: true,
-        displayAllHeaders: true,
+        displayAllHeaders: false,
         nav: [
             { text: 'Github', link: 'https://github.com/debingfeng' },
             { text: '掘金', link: 'https://juejin.im/user/5cdcc7b1f265da036902bcc7' },
@@ -17,7 +17,7 @@ module.exports = {
         ],
         sidebarDepth: 1,
         sidebar: [{
-                title: 'Arch ui框架',
+                title: 'Arch-ui框架',
                 collapsable: false,
                 children: [
                     '/archui/01-archui框架的目的与定位.md',
@@ -33,16 +33,15 @@ module.exports = {
                 title: '2019年度',
                 collapsable: false,
                 children: [
-                    '/2019/',
                     '/2019/05/',
-                    '/2019/11/'
+                    '/2019/11/',
+                    '/2019/12/'
                 ]
             },
             {
                 title: '2018年度',
                 collapsable: false,
                 children: [
-                    '/2018/',
                     '/2018/08/'
                 ]
             },

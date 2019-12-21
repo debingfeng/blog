@@ -1,3 +1,6 @@
+---
+sidebarDepth : 0
+---
 
 ## JavaScript监听所有Ajax请求的事件
 

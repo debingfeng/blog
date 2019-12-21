@@ -1,6 +1,11 @@
+---
+sidebarDepth : 0
+---
 
 # javascript继承
-[toc]
+
+[[toc]]
+
 ## 原型链去继承
 
 

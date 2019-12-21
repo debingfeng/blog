@@ -1,6 +1,12 @@
-[参考教程](http://www.runoob.com/mongodb/mongodb-window-install.html)
+---
+sidebarDepth : 0
+---
+
+
 
 ## 官方网站下载
+
+[参考教程](http://www.runoob.com/mongodb/mongodb-window-install.html)
 
 [windows版本下载](https://www.mongodb.com/download-center?jmp=nav#community)
 

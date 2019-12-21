@@ -1,6 +1,10 @@
-[TOC]
+---
+sidebarDepth : 0
+---
 
 # laravel实战进阶
+
+[[TOC]]
 
 ## [Git操作书籍](https://git-scm.com/book/zh/v2)
 

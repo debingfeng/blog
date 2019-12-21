@@ -1,3 +1,6 @@
+---
+sidebarDepth : 0
+---
     
 ## JavaScript数据结构之集合
  

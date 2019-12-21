@@ -1,6 +1,10 @@
-[TOC]
+---
+sidebarDepth : 0
+---
 
 # Node.js下jwt实现请求验证
+
+[[toc]]
 
 ## 1、JWT基本使用
 

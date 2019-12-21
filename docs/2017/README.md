@@ -4,6 +4,10 @@ sidebarDepth : 0
 
 # 2017年度文章
 
+[[toc]]
+
+## [web-standard](./web-standard.md)
+
 ## [编写可维护的js](./编写可维护的js.md)
 
 ## [队列JavaScript实现](./队列JavaScript实现.md)
@@ -21,7 +25,7 @@ sidebarDepth : 0
 
 ## [gulp自动化构建工具](./gulp.md)
 
-## [HTML5 一 history API](./HTML5 一 history API.md)
+## [HTML5-history API](./HTML5中History实践.md)
 
 ## [HTML5的音频操作-02](./HTML5的音频操作.md)
 
@@ -30,8 +34,12 @@ sidebarDepth : 0
 
 ## [JavaScript监听所有Ajax请求的事件](./JavaScript监听所有Ajax请求的事件.md)
 
-## [JavaScript数据结构 - 列表、堆栈、队列 ](./JavaScript数据结构 - 列表、堆栈、队列.md)
+## [JavaScript数据结构-列表堆/栈/队列](./JavaScript数据结构01.md)
 
-## [HTML5 一 history API](./HTML5 一 history API.md)
+## [Node.js数据库操作](./Node.js数据库操作.md)
 
-## [HTML5的音频操作-02](./HTML5的音频操作.md)
+## [Node.js下jwt实现请求验证](./Node.js下jwt实现请求验证.md)
+
+## [node.js下mongoose简单操作实例](./node.js下mongoose简单操作实例.md)
+
+## [Node.js模板的引擎的选择](./Node.js模板的引擎的选择.md)

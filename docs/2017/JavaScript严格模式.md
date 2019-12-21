@@ -1,3 +1,7 @@
+---
+sidebarDepth : 0
+---
+
 # JavaScript严格模式
 
 回顾了一下JavaScript严格模式，贴出来与大家一起温故而知新，一起巩固。

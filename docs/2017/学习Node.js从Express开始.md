@@ -1,6 +1,10 @@
+---
+sidebarDepth : 0
+---
+
 # 学习Node.js从express开始
 
-[toc]
+[[toc]]
 
 ## 安装依赖
 

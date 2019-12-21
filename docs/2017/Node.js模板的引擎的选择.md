@@ -1,6 +1,10 @@
+---
+sidebarDepth : 0
+---
+
 # Node.js使用
 
-[toc]
+[[toc]]
 
 ## ejs - Node.js模板的引擎的选择
 
