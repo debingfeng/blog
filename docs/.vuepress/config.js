@@ -13,22 +13,20 @@ module.exports = {
         nav: [
             { text: 'Github', link: 'https://github.com/debingfeng' },
             { text: '掘金', link: 'https://juejin.im/user/5cdcc7b1f265da036902bcc7' },
-            { text: '关于我', link: 'https://debingfeng.github.io/about' }
+            { text: '关于我', link: '/about-me.md' }
         ],
         sidebarDepth: 1,
-        sidebar: [
-            {
+        sidebar: [{
                 title: 'Arch ui框架',
                 collapsable: false,
                 children: [
-                    '/archui/00-组件库设计开发的目标与定位.md',
-                    '/archui/01-arch-ui框架的目的与定位.md',
-                    '/archui/02-框架设计大纲.md',
+                    '/archui/01-archui框架的目的与定位.md',
+                    '/archui/02-框架功能需求.md',
                     '/archui/03-架构设计.md',
                     '/archui/04-交互设计参考.md',
-                    '/archui/05-场景化模板.md',
-                    '/archui/06-参考文章.md',
-                    '/archui/07-组件库开发时间评估.md'
+                    '/archui/05-组件库开发周期.md',
+                    '/archui/06-场景化模板.md',
+                    '/archui/07-参考文章.md'
                 ]
             },
             {
@@ -46,6 +44,13 @@ module.exports = {
                 children: [
                     '/2018/',
                     '/2018/08/'
+                ]
+            },
+            {
+                title: '2017年度',
+                collapsable: false,
+                children: [
+                    '/2017/'
                 ]
             }
         ]
