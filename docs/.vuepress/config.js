@@ -34,6 +34,7 @@ module.exports = {
                 collapsable: false,
                 children: [
                     '/2019/05/',
+                    '/2019/06/',
                     '/2019/11/',
                     '/2019/12/'
                 ]
@@ -42,7 +43,7 @@ module.exports = {
                 title: '2018年度',
                 collapsable: false,
                 children: [
-                    '/2018/08/'
+                    '/2018/'
                 ]
             },
             {

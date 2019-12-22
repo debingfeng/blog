@@ -32,15 +32,14 @@ https://loadable-components.com/docs/getting-started/
 - 5）组件通信
 - 6）React-Hook使用
 
-## 组件通信
+## 后续专门介绍重要概念使用实践
 
-## React企业级开发
+### 组件通信
 
-velocity-react
-react-move
+### React-Hook实践
 
-1.AlanWei/blog：笔者的 GitHub 博客，里面有更多关于 React、组件库、前端数据层、服务端渲染的资料。
-2.pure render：阿里数据中台前端团队分享前端相关经验。
-3.前端精读评论：阿里数据中台前端团队分享前端界的好文精读。
-4.前端新能源：分享前端有深度的新思想和新方法。
-5.蚂蚁金服体验科技：探索极致用户体验与最佳工程实践。
+### 企业中大型中后台系统架构设计实践
+
+
+
+

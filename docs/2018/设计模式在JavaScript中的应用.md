@@ -1,4 +1,6 @@
-
+---
+sidebarDepth : 0
+---
 
 # 设计模式在JavaScript中的应用实践（一）
 
