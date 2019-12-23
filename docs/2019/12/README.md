@@ -3,6 +3,7 @@ sidebarDepth : 0
 ---
 # 2019年12月份文章目录
 
+## [使用lottie播放动画](./使用lottie播放动画.md)
 
 ## [React+React-router实践01](./React+React-router实践01.md)
 
