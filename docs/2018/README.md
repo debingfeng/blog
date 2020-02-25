@@ -6,6 +6,9 @@ sidebarDepth : 0
 
 [[toc]]
 
+
+## [雅虎网页性能优化原则](./雅虎网页性能优化原则.md)
+
 ## [vue-bus应用于非父子通信](./vue-bus应用于非父子通信.md)
 
 ## [Vue组件中provide与inject使用](./Vue组件中provide与inject使用.md)
