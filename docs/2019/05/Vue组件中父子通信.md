@@ -4,7 +4,7 @@ sidebarDepth : 0
 
 [[toc]]
 
-# 1、父子组件的方式
+# Vue组件中的通信方式
 
 ## 1)、props 属性： 通过props向子组件传参
 
@@ -15,9 +15,9 @@ sidebarDepth : 0
 
 ## 3)、$attrs 与 $listeners
 
-## 4)、通过全局组件Bus封装来（已试用）
+## 4)、通过全局组件Bus封装来
 
-## 5)、Vuex（已试用）
+## 5)、Vuex
 
 ```javascript
 //https://vuex.vuejs.org/zh/
