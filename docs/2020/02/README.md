@@ -7,7 +7,7 @@ sidebarDepth : 0
 
 ## [Webpack优化实践](./Webpack优化实践.md)
 
-## [Webpack优化实践](./Webpack优化实践.md)
+## [全链路性能与质量监控](./全链路性能与质量监控.md)
 
 ## [浏览器缓存.md](./浏览器缓存.md)
 
