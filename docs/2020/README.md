@@ -3,9 +3,7 @@ sidebarDepth : 0
 ---
 # 2020年文章
 
-## [Typescript实践TodoList](./Typescript实践TodoList.md)
-
-## [Typescript基础语法01](./Typescript基础语法01.md)
+## [Vue项目中使用jest进行单元测试](./Vue项目中使用jest进行单元测试.md)
 
 ## [混合APP中优化.md](./混合APP中优化.md)
 
