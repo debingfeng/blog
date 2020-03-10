@@ -3,6 +3,8 @@ sidebarDepth : 0
 ---
 # 2019年12月份文章目录
 
+## [移动端rem使用和适配原理的介绍](./移动端rem使用和适配原理的介绍.md)
+
 ## [WebComponent概念及入门](./使用lottie播放动画.md)
 
 ## [使用lottie播放动画](./使用lottie播放动画.md)
