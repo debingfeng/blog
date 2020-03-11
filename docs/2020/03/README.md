@@ -5,6 +5,7 @@ sidebarDepth : 0
 
 # 2020年3月份文章目录
 
+## [proxy与Object.defineProperty的区别](./proxy与Object.defineProperty的区别.md)
 
 ## [Vue项目中使用jest进行单元测试](./Vue项目中使用jest进行单元测试.md)
 
