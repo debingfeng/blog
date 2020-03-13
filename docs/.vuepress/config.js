@@ -12,7 +12,7 @@ module.exports = {
         displayAllHeaders: false,
         nav: [
             { text: 'Github', link: 'https://github.com/debingfeng' },
-            { text: '掘金', link: 'https://juejin.im/user/5cdcc7b1f265da036902bcc7' },
+            { text: '语雀', link: 'https://www.yuque.com/debingfeng' },
             { text: '关于我', link: '/about-me.md' }
         ],
         sidebarDepth: 1,
@@ -50,18 +50,15 @@ module.exports = {
                 ]
             },
             {
-                title: 'Arch-ui框架',
+                title: 'Node.js相关',
                 collapsable: false,
                 children: [
-                    '/archui/01-archui框架的目的与定位.md',
-                    '/archui/02-框架功能需求.md',
-                    '/archui/03-架构设计.md',
-                    '/archui/04-交互设计参考.md',
-                    '/archui/05-组件库开发周期.md',
-                    '/archui/06-场景化模板.md',
-                    '/archui/07-参考文章.md'
+                    '/Node/base/',
+                    '/Node/practice/',
+                    '/Node/advanced/'
                 ]
-            },
+            }
+
         ]
     }
 
