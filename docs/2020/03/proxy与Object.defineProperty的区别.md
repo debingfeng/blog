@@ -1,7 +1,7 @@
-
 ---
 sidebarDepth : 0
 ---
+
 # proxy与Object.defineProperty的区别
 
 ## $nextTick的原理与使用场景

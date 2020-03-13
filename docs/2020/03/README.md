@@ -2,7 +2,6 @@
 sidebarDepth : 0
 ---
 
-
 # 2020年3月份文章目录
 
 ## [proxy与Object.defineProperty的区别](./proxy与Object.defineProperty的区别.md)
@@ -11,6 +10,6 @@ sidebarDepth : 0
 
 ## [Vue不依赖Vue-router的小型项目开发](./Vue不依赖Vue-router的小型项目开发.md)
 
-## [Vue不依赖Vue-router的小型项目开发](./Vue不依赖Vue-router的小型项目开发.md)
+## [基于Vue实现的UI组件库-router的小型项目开发](./基于Vue实现的UI组件库.md)
 
 ## [为什么使用Node.js](./Node.js的介绍.md)
