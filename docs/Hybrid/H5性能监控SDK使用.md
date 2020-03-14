@@ -5,7 +5,7 @@ sidebarDepth : 0
 
 ### 源码全览
 
-```
+```javascript
 /**
  * Created by fdb on 2018/1/18.
  */
@@ -113,19 +113,6 @@ sidebarDepth : 0
          * @param callback
          */
         uploadData: function (funcName, data) {
-            var json = {
-                href: location.href,
-                title: document.title,
-                data: JSON.stringify(data)
-            };
-            if (window.jsBridge && jsBridge.massiveDataStatistic) {
-                jsBridge.massiveDataStatistic(funcName,json,monitor.util.getModuleName());
-                return false;
-            }
-            // 支持第一套
-            if (window.native && native.massiveDataStatistic) {
-                native.massiveDataStatistic(funcName,json);
-            }
         },
         /**
          * 获取性能数据

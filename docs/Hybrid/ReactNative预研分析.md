@@ -20,7 +20,7 @@
 
 ### 内存
 
-![](http://doc.stip.bbkedu.com/uploads/2a6d96e6ec90033e439c016a8e9796e5.png)
+![]()
 
 从上面的内存占用来看，并不会因为使用  React Native 而导致内存占用过多，而是在正常范围内。
 
@@ -40,7 +40,7 @@ React Native 里面为了兼容，加载了 armeabi-v7a 和 x86 的 so 包，当
 
 React Native 的热更新就是更新 JsBundle 文件，更新的步骤如下：
 
-![](http://doc.stip.bbkedu.com/uploads/212004d59b677f2c0f1110a233d9dc9f.png)
+![]()
 
 ## 其他问题
 
