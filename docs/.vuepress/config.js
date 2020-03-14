@@ -50,6 +50,13 @@ module.exports = {
                 ]
             },
             {
+                title: 'H5与Hybrid开发相关',
+                collapsable: false,
+                children: [
+                    '/Hybrid/',
+                ]
+            },
+            {
                 title: 'Node.js相关',
                 collapsable: false,
                 children: [
