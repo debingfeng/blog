@@ -6,7 +6,8 @@ sidebarDepth : 0
 
 ## REM定义
 
-REM是一种基于HTML的字体的相对单位。
+REM全称是 font size of the root element （根元素的字体大小）
+它是CSS3中新增加的一个尺寸（度量）单位，根节点（html）的font-size决定了rem的尺寸，也就是说它是一个相对单位，相对于(html)。
 
 ## 兼容性
 

@@ -50,7 +50,7 @@ module.exports = {
                 ]
             },
             {
-                title: 'H5与Hybrid开发相关',
+                title: 'H5与Hybrid专栏',
                 collapsable: false,
                 children: [
                     '/Hybrid/',
