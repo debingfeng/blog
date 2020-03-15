@@ -18,54 +18,58 @@ module.exports = {
         sidebarDepth: 1,
         sidebar: [
             {
-                title: '2020年度',
+                title: 'H5与Hybrid',
                 collapsable: false,
                 children: [
-                    '/2020/03/',
-                    '/2020/02/',
+                    '/hybrid/h5/',
+                    '/hybrid/native/',
                 ]
             },
             {
-                title: '2019年度',
+                title: 'CSS',
                 collapsable: false,
                 children: [
-                    '/2019/05/',
-                    '/2019/06/',
-                    '/2019/11/',
-                    '/2019/12/'
+                    '/css/',
                 ]
             },
             {
-                title: '2018年度',
+                title: 'Javascript',
                 collapsable: false,
                 children: [
-                    '/2018/'
+                    '/javascript/',
                 ]
             },
             {
-                title: '2017年度',
+                title: '前端框架',
                 collapsable: false,
                 children: [
-                    '/2017/'
+                    '/vue/',
+                    '/react/',
+                    '/angular/',
+                    '/node/',
                 ]
             },
             {
-                title: 'H5与Hybrid专栏',
+                title: '基础架构与工程化',
                 collapsable: false,
                 children: [
-                    '/Hybrid/',
+                    '/structure/',
                 ]
             },
             {
-                title: 'Node.js相关',
+                title: '服务器开发',
                 collapsable: false,
                 children: [
-                    '/Node/base/',
-                    '/Node/practice/',
-                    '/Node/advanced/'
+                    '/server/',
                 ]
-            }
-
+            },
+            {
+                title: '计算机基础',
+                collapsable: false,
+                children: [
+                    '/computer/',
+                ]
+            },
         ]
     }
 
