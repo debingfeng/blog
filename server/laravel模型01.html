@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>laravel模型 | 一兵的博客</title>
+    <meta name="description" content="不畏浮云遮望眼，直挂云帆济沧海！">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.52b48649.css" as="style"><link rel="preload" href="/assets/js/app.8f18e5fd.js" as="script"><link rel="preload" href="/assets/js/80.02161799.js" as="script"><link rel="prefetch" href="/assets/js/10.71f09648.js"><link rel="prefetch" href="/assets/js/100.3acc8c3a.js"><link rel="prefetch" href="/assets/js/101.8f71d491.js"><link rel="prefetch" href="/assets/js/102.6c1184ca.js"><link rel="prefetch" href="/assets/js/11.364bb21f.js"><link rel="prefetch" href="/assets/js/12.1cb022b8.js"><link rel="prefetch" href="/assets/js/13.335bb278.js"><link rel="prefetch" href="/assets/js/14.f2baee24.js"><link rel="prefetch" href="/assets/js/15.cf6c6320.js"><link rel="prefetch" href="/assets/js/16.7a462aaf.js"><link rel="prefetch" href="/assets/js/17.543ddbc3.js"><link rel="prefetch" href="/assets/js/18.e2fddc95.js"><link rel="prefetch" href="/assets/js/19.4b29315e.js"><link rel="prefetch" href="/assets/js/2.8d9a8772.js"><link rel="prefetch" href="/assets/js/20.17236317.js"><link rel="prefetch" href="/assets/js/21.57a4719e.js"><link rel="prefetch" href="/assets/js/22.11e5b2ff.js"><link rel="prefetch" href="/assets/js/23.e9e1edfe.js"><link rel="prefetch" href="/assets/js/24.12e5ccb4.js"><link rel="prefetch" href="/assets/js/25.82d489d0.js"><link rel="prefetch" href="/assets/js/26.0e09b21f.js"><link rel="prefetch" href="/assets/js/27.abcfd977.js"><link rel="prefetch" href="/assets/js/28.4716e22e.js"><link rel="prefetch" href="/assets/js/29.f589746e.js"><link rel="prefetch" href="/assets/js/3.570ec1d8.js"><link rel="prefetch" href="/assets/js/30.5f5bc6ba.js"><link rel="prefetch" href="/assets/js/31.90d2c347.js"><link rel="prefetch" href="/assets/js/32.0bef948f.js"><link rel="prefetch" href="/assets/js/33.2a6c6aa7.js"><link rel="prefetch" href="/assets/js/34.900a0b5f.js"><link rel="prefetch" href="/assets/js/35.12d6f746.js"><link rel="prefetch" href="/assets/js/36.ac774b00.js"><link rel="prefetch" href="/assets/js/37.ef05dd90.js"><link rel="prefetch" href="/assets/js/38.939c6332.js"><link rel="prefetch" href="/assets/js/39.353619f6.js"><link rel="prefetch" href="/assets/js/4.a4cfb050.js"><link rel="prefetch" href="/assets/js/40.0b129163.js"><link rel="prefetch" href="/assets/js/41.7176df99.js"><link rel="prefetch" href="/assets/js/42.b03adce3.js"><link rel="prefetch" href="/assets/js/43.098ca71d.js"><link rel="prefetch" href="/assets/js/44.bf752f35.js"><link rel="prefetch" href="/assets/js/45.b7ef827e.js"><link rel="prefetch" href="/assets/js/46.48d10767.js"><link rel="prefetch" href="/assets/js/47.8e1f6691.js"><link rel="prefetch" href="/assets/js/48.02fabbe2.js"><link rel="prefetch" href="/assets/js/49.f47ebe04.js"><link rel="prefetch" href="/assets/js/5.5ed2dc47.js"><link rel="prefetch" href="/assets/js/50.ba1abd6c.js"><link rel="prefetch" href="/assets/js/51.e4293525.js"><link rel="prefetch" href="/assets/js/52.9b458637.js"><link rel="prefetch" href="/assets/js/53.5cec51ad.js"><link rel="prefetch" href="/assets/js/54.985aca3f.js"><link rel="prefetch" href="/assets/js/55.38e8c848.js"><link rel="prefetch" href="/assets/js/56.d0dd0b3d.js"><link rel="prefetch" href="/assets/js/57.e32ed0ba.js"><link rel="prefetch" href="/assets/js/58.71ec5ec4.js"><link rel="prefetch" href="/assets/js/59.220a226d.js"><link rel="prefetch" href="/assets/js/6.4c6d031d.js"><link rel="prefetch" href="/assets/js/60.6681db6e.js"><link rel="prefetch" href="/assets/js/61.14e902b7.js"><link rel="prefetch" href="/assets/js/62.1104f7db.js"><link rel="prefetch" href="/assets/js/63.f525feb0.js"><link rel="prefetch" href="/assets/js/64.1dd8e9d8.js"><link rel="prefetch" href="/assets/js/65.896d29c9.js"><link rel="prefetch" href="/assets/js/66.6dfeabff.js"><link rel="prefetch" href="/assets/js/67.a9c6ceeb.js"><link rel="prefetch" href="/assets/js/68.d165b7df.js"><link rel="prefetch" href="/assets/js/69.9c31997f.js"><link rel="prefetch" href="/assets/js/7.8763523a.js"><link rel="prefetch" href="/assets/js/70.d6e782bb.js"><link rel="prefetch" href="/assets/js/71.cc306843.js"><link rel="prefetch" href="/assets/js/72.ea3b7336.js"><link rel="prefetch" href="/assets/js/73.1400043a.js"><link rel="prefetch" href="/assets/js/74.717f95d1.js"><link rel="prefetch" href="/assets/js/75.01c737f8.js"><link rel="prefetch" href="/assets/js/76.9d9cdf15.js"><link rel="prefetch" href="/assets/js/77.8a54ea5b.js"><link rel="prefetch" href="/assets/js/78.a843b7d3.js"><link rel="prefetch" href="/assets/js/79.0ccb3037.js"><link rel="prefetch" href="/assets/js/8.a71b4a6b.js"><link rel="prefetch" href="/assets/js/81.7958bf86.js"><link rel="prefetch" href="/assets/js/82.72fe4c77.js"><link rel="prefetch" href="/assets/js/83.cc46616b.js"><link rel="prefetch" href="/assets/js/84.2884b510.js"><link rel="prefetch" href="/assets/js/85.daa2ce92.js"><link rel="prefetch" href="/assets/js/86.adae1799.js"><link rel="prefetch" href="/assets/js/87.46d6479c.js"><link rel="prefetch" href="/assets/js/88.b4bea9b3.js"><link rel="prefetch" href="/assets/js/89.c97cf353.js"><link rel="prefetch" href="/assets/js/9.3cb6b278.js"><link rel="prefetch" href="/assets/js/90.d76d7f38.js"><link rel="prefetch" href="/assets/js/91.0b44c3d0.js"><link rel="prefetch" href="/assets/js/92.b306e484.js"><link rel="prefetch" href="/assets/js/93.49777a1d.js"><link rel="prefetch" href="/assets/js/94.043d967e.js"><link rel="prefetch" href="/assets/js/95.5db7943e.js"><link rel="prefetch" href="/assets/js/96.71ab4028.js"><link rel="prefetch" href="/assets/js/97.417d6475.js"><link rel="prefetch" href="/assets/js/98.3606a8f3.js"><link rel="prefetch" href="/assets/js/99.e84f4f12.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.52b48649.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">一兵的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yuque.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about-me.html" class="nav-link">关于我</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yuque.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about-me.html" class="nav-link">关于我</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>H5与Hybrid</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/hybrid/h5/" class="sidebar-link">H5开发</a></li><li><a href="/hybrid/native/" class="sidebar-link">Hybrid混合开发</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/css/" class="sidebar-link">CSS目录</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Javascript</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/javascript/" class="sidebar-link">Javascript</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>前端框架</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vue/" class="sidebar-link">Vue相关</a></li><li><a href="/react/" class="sidebar-link">React相关</a></li><li><a href="/angular/" class="sidebar-link">Angular相关</a></li><li><a href="/node/" class="sidebar-link">Node相关</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>团队协作与工程化</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/structure/" class="sidebar-link">团队协作与工程化</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>服务器开发</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/server/" class="sidebar-link">服务器开发</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>计算机基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/computer/" class="sidebar-link">计算机基础</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="laravel模型"><a href="#laravel模型" aria-hidden="true" class="header-anchor">#</a> laravel模型</h1> <p></p><div class="table-of-contents"><ul><li><a href="#简介">简介</a></li><li><a href="#定义模型">定义模型</a><ul><li><a href="#eloquent-模型约定">Eloquent 模型约定#</a></li><li><a href="#数据表名称">数据表名称#</a></li><li><a href="#主键">主键#</a></li><li><a href="#时间戳">时间戳#</a></li><li><a href="#数据库连接">数据库连接#</a></li></ul></li><li><a href="#取回多个模型">取回多个模型</a><ul><li><a href="#增加额外的限制">增加额外的限制#</a></li><li><a href="#分块结果">分块结果#</a></li><li><a href="#使用游标">使用游标#</a></li></ul></li><li><a href="#取回单个模型或集合">取回单个模型或集合</a><ul><li><a href="#「未找到」异常">「未找到」异常#</a></li><li><a href="#取回集合">取回集合#</a></li></ul></li><li><a href="#添加和更新模型">添加和更新模型</a><ul><li><a href="#基本添加">基本添加#</a></li><li><a href="#基本更新">基本更新#</a></li><li><a href="#批量更新">批量更新#</a></li><li><a href="#批量赋值">批量赋值#</a></li><li><a href="#guarding-attributes">Guarding Attributes#</a></li><li><a href="#其它创建的方法">其它创建的方法#</a></li></ul></li><li><a href="#删除模型">删除模型</a><ul><li><a href="#通过主键来删除现有的模型">通过主键来删除现有的模型#</a></li><li><a href="#通过查询来删除模型">通过查询来删除模型#</a></li><li><a href="#软删除">软删除#</a></li><li><a href="#查询被软删除的模型">查询被软删除的模型#</a></li></ul></li><li><a href="#查询作用域">查询作用域</a><ul><li><a href="#全局作用域">全局作用域#</a></li><li><a href="#编写全局作用域">编写全局作用域#</a></li><li><a href="#应用全局作用域">应用全局作用域#</a></li><li><a href="#匿名的全局作用域">匿名的全局作用域#</a></li><li><a href="#移除全局作用域">移除全局作用域#</a></li><li><a href="#本地作用域">本地作用域#</a></li><li><a href="#利用查询范围">利用查询范围#</a></li><li><a href="#动态范围">动态范围#</a></li></ul></li><li><a href="#事件观察器">事件观察器</a><ul><li><a href="#观察者">观察者#</a></li></ul></li></ul></div><p></p> <h2 id="简介"><a href="#简介" aria-hidden="true" class="header-anchor">#</a> 简介</h2> <p>Laravel 的 Eloquent ORM 提供了漂亮、简洁的 ActiveRecord 实现来和数据库进行交互。每个数据库表都有一个对应的「模型」可用来跟数据表进行交互。你可以通过模型查询数据表内的数据，以及将记录添加到数据表中。</p> <p>在开始之前，请确认你已在 config/database.php 文件中设置好了数据库连接。更多数据库的设置信息请查看 数据库设置 文档。</p> <h2 id="定义模型"><a href="#定义模型" aria-hidden="true" class="header-anchor">#</a> 定义模型</h2> <p>开始之前，让我们先来创建一个 Eloquent 模型。模型通常放在 app 目录中，不过你可以将他们随意放在任何可通过 composer.json 自动加载的地方。所有的 Eloquent 模型都继承自 Illuminate\Database\Eloquent\Model 类。</p> <p>创建模型实例的最简单方法是使用 make:model Artisan 命令：</p> <div class="language- extra-class"><pre class="language-text"><code>php artisan make:model User
+</code></pre></div><p>当你生成一个模型时想要顺便生成一个 数据库迁移，可以使用 --migration 或 -m 选项：</p> <div class="language- extra-class"><pre class="language-text"><code>php artisan make:model User --migration
+
+php artisan make:model User -m
+</code></pre></div><h3 id="eloquent-模型约定"><a href="#eloquent-模型约定" aria-hidden="true" class="header-anchor">#</a> Eloquent 模型约定#</h3> <p>现在，让我们来看一个 Flight 模型类的例子，我们将会用它从 flights 数据表中取回与保存信息：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Flight extends Model
+{
+    //
+}
+</code></pre></div><h3 id="数据表名称"><a href="#数据表名称" aria-hidden="true" class="header-anchor">#</a> 数据表名称#</h3> <p>请注意，我们并没有告诉 Eloquent Flight 模型该使用哪一个数据表。除非数据表明确地指定了其它名称，否则将使用类的「蛇形名称」、复数形式名称来作为数据表的名称。因此在此例子中，Eloquent 将会假设 Flight 模型被存储记录在 flights 数据表中。你可以在模型上定义一个 table 属性，用来指定自定义的数据表名称：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Flight extends Model
+{
+    /**
+     * 与模型关联的数据表
+     *
+     * @var string
+     */
+    protected $table = 'my_flights';
+}
+</code></pre></div><h3 id="主键"><a href="#主键" aria-hidden="true" class="header-anchor">#</a> 主键#</h3> <p>Eloquent 也会假设每个数据表都有一个叫做 id 的主键字段。你也可以定义一个 $primaryKey 属性来重写这个约定。</p> <p>此外，Eloquent 假定主键是一个递增的整数值，这意味着在默认情况下主键将自动的被强制转换为 int。 如果你想使用非递增或者非数字的主键，你必须在你的模型 public $incrementing 属性设置为false。</p> <h3 id="时间戳"><a href="#时间戳" aria-hidden="true" class="header-anchor">#</a> 时间戳#</h3> <ul><li>默认情况下，Eloquent 会认为在你的数据库表有 created_at 和 updated_at 字段。如果你不希望让 Eloquent 来自动维护这两个字段，可在模型内将 $timestamps 属性设置为 false：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Flight extends Model
+{
+    /**
+     * 该模型是否被自动维护时间戳
+     *
+     * @var bool
+     */
+    public $timestamps = false;
+}
+</code></pre></div><ul><li>如果你需要自定义自己的时间戳格式，可在模型内设置 $dateFormat 属性。这个属性决定了日期应如何在数据库中存储，以及当模型被序列化成数组或 JSON 格式：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Flight extends Model
+{
+    /**
+     * 模型的日期字段保存格式。
+     *
+     * @var string
+     */
+    protected $dateFormat = 'U';
+}
+</code></pre></div><ul><li>如果你需要自定义用于存储时间戳的字段名，可在模型中设置 CREATED_AT 和 UPDATED_AT 常量：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+class Flight extends Model
+{
+    const CREATED_AT = 'creation_date';
+    const UPDATED_AT = 'last_update';
+}
+</code></pre></div><h3 id="数据库连接"><a href="#数据库连接" aria-hidden="true" class="header-anchor">#</a> 数据库连接#</h3> <ul><li>默认情况下，所有的 Eloquent 模型会使用应用程序中默认的数据库连接设置。如果你想为模型指定不同的连接，可以使用 $connection 属性：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Flight extends Model
+{
+    /**
+     * 此模型的连接名称。
+     *
+     * @var string
+     */
+    protected $connection = 'connection-name';
+}
+</code></pre></div><h2 id="取回多个模型"><a href="#取回多个模型" aria-hidden="true" class="header-anchor">#</a> 取回多个模型</h2> <ul><li>一旦你创建并 关联了一个模型到数据表 上，那么你就可以从数据库中获取数据。可把每个 Eloquent 模型想像成强大的 查询构造器，它让你可以流畅地查询与模型关联的数据表。例如：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+use App\Flight;
+
+$flights = App\Flight::all();
+
+foreach ($flights as $flight) {
+    echo $flight-&gt;name;
+}
+</code></pre></div><h3 id="增加额外的限制"><a href="#增加额外的限制" aria-hidden="true" class="header-anchor">#</a> 增加额外的限制#</h3> <ul><li><p>Eloquent 的 all 方法会返回在模型数据表中的所有结果。由于每个 Eloquent 模型都可以当作一个 查询构造器，所以你可以在查询中增加规则，然后使用 get 方法来获取结果：</p></li> <li><p>这里的限制条件方法可查询DB查询构建器里面的方法</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>$flights = App\Flight::where('active', 1)
+               -&gt;orderBy('name', 'desc')
+               -&gt;take(10)
+               -&gt;get();
+</code></pre></div><h3 id="分块结果"><a href="#分块结果" aria-hidden="true" class="header-anchor">#</a> 分块结果#</h3> <p>如果你需要处理数以千计的 Eloquent 查找结果，则可以使用 chunk 命令。chunk 方法将会获取一个 Eloquent 模型的「分块」，并将它们送到指定的 闭包 (Closure) 中进行处理。当你在处理大量结果时，使用 chunk 方法可节省内存：</p> <div class="language- extra-class"><pre class="language-text"><code>Flight::chunk(200, function ($flights) {
+    foreach ($flights as $flight) {
+        //
+    }
+});
+</code></pre></div><p>传递到方法的第一个参数表示每次「分块」时你希望接收的数据数量。闭包则作为第二个参数传递，它将会在每次从数据取出分块时被调用。</p> <h3 id="使用游标"><a href="#使用游标" aria-hidden="true" class="header-anchor">#</a> 使用游标#</h3> <p>cursor 允许你使用游标来遍历数据库数据，一次只执行单个查询。在处理大数据量请求时 cursor 方法可以大幅度减少内存的使用：</p> <div class="language- extra-class"><pre class="language-text"><code>foreach (Flight::where('foo', 'bar')-&gt;cursor() as $flight) {
+    //
+}
+</code></pre></div><h2 id="取回单个模型或集合"><a href="#取回单个模型或集合" aria-hidden="true" class="header-anchor">#</a> 取回单个模型或集合</h2> <ul><li>当然，除了从指定的数据表取回所有记录，你也可以通过 find 和 first 方法来取回单条记录。但这些方法返回的是单个模型的实例，而不是返回模型的集合：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 通过主键取回一个模型...
+$flight = App\Flight::find(1);
+
+// 取回符合查询限制的第一个模型 ...
+$flight = App\Flight::where('active', 1)-&gt;first();
+</code></pre></div><ul><li>你也可以用主键的集合为参数调用find方法，它将返回符合条件的集合：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$flights = App\Flight::find([1, 2, 3]);
+</code></pre></div><h3 id="「未找到」异常"><a href="#「未找到」异常" aria-hidden="true" class="header-anchor">#</a> 「未找到」异常#</h3> <p>有时候你可能希望在找不到模型时抛出一个异常，这在路由或是控制器内特别有用。findOrFail 以及 firstOrFail 方法会取回查询的第一个结果。如果没有找到相应结果，则会抛出一个 Illuminate\Database\Eloquent\ModelNotFoundException：</p> <div class="language- extra-class"><pre class="language-text"><code>$model = App\Flight::findOrFail(1);
+
+$model = App\Flight::where('legs', '&gt;', 100)-&gt;firstOrFail();
+</code></pre></div><p>如果该异常没有被捕获，则会自动返回 HTTP 404 响应给用户，因此当使用这些方法时，你没有必要明确的编写检查来返回 404 响应：</p> <div class="language- extra-class"><pre class="language-text"><code>Route::get('/api/flights/{id}', function ($id) {
+    return App\Flight::findOrFail($id);
+});
+</code></pre></div><h3 id="取回集合"><a href="#取回集合" aria-hidden="true" class="header-anchor">#</a> 取回集合#</h3> <p>当然，你也可以使用 count、sum、max，和其它 查询构造器 提供的 聚合函数。这些方法会返回适当的标量值，而不是一个完整的模型实例：</p> <div class="language- extra-class"><pre class="language-text"><code>$count = App\Flight::where('active', 1)-&gt;count();
+
+$max = App\Flight::where('active', 1)-&gt;max('price');
+</code></pre></div><h2 id="添加和更新模型"><a href="#添加和更新模型" aria-hidden="true" class="header-anchor">#</a> 添加和更新模型</h2> <h3 id="基本添加"><a href="#基本添加" aria-hidden="true" class="header-anchor">#</a> 基本添加#</h3> <p>要在数据库中创建一条新记录，只需创建一个新模型实例，并在模型上设置属性和调用 save 方法即可：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App\Http\Controllers;
+
+use App\Flight;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class FlightController extends Controller
+{
+    /**
+     * 创建一个新的航班实例。
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function store(Request $request)
+    {
+        // 验证请求...
+
+        $flight = new Flight;
+
+        $flight-&gt;name = $request-&gt;name;
+
+        $flight-&gt;save();
+    }
+}
+</code></pre></div><p>在这个例子中，我们把来自 HTTP 请求中的 name 参数简单地指定给 App\Flight 模型实例的 name 属性。当我们调用 save 方法，就会添加一条记录到数据库中。当 save 方法被调用时，created_at 以及 updated_at 时间戳将会被自动设置，因此我们不需要去手动设置它们。</p> <h3 id="基本更新"><a href="#基本更新" aria-hidden="true" class="header-anchor">#</a> 基本更新#</h3> <p>save 方法也可以用于更新数据库中已经存在的模型。要更新模型，则须先取回模型，再设置任何你希望更新的属性，接着调用 save 方法。同样的，updated_at 时间戳将会被自动更新，所以我们不需要手动设置它的值：</p> <div class="language- extra-class"><pre class="language-text"><code>$flight = App\Flight::find(1);
+
+$flight-&gt;name = 'New Flight Name';
+
+$flight-&gt;save();
+</code></pre></div><h3 id="批量更新"><a href="#批量更新" aria-hidden="true" class="header-anchor">#</a> 批量更新#</h3> <p>也可以针对符合指定查询的任意数量模型进行更新。在这个例子中，所有 active 并且 destination 为 San Diego 的航班，都将会被标识为延迟：</p> <div class="language- extra-class"><pre class="language-text"><code>App\Flight::where('active', 1)
+          -&gt;where('destination', 'San Diego')
+          -&gt;update(['delayed' =&gt; 1]);
+</code></pre></div><p>update 方法会期望收到一个含有字段与值对应的数组，而这些字段的内容将会被更新。</p> <h3 id="批量赋值"><a href="#批量赋值" aria-hidden="true" class="header-anchor">#</a> 批量赋值#</h3> <p>你也可以使用 create 方法通过一行代码来保存一个新模型。被插入数据库的模型实例将会返回给你。不过，在这样做之前，你需要先在你的模型上定义一个 fillable 或 guarded 属性，因为所有的 Eloquent 模型都针对批量赋值（Mass-Assignment）做了保护。</p> <p>当用户通过 HTTP 请求传入了非预期的参数，并借助这些参数更改了数据库中你并不打算要更改的字段，这时就会出现批量赋值（Mass-Assignment）漏洞。例如，恶意用户可能会通过 HTTP 请求发送 is_admin 参数，然后对应到你模型的 create 方法，此操作能让该用户把自己升级为一个管理者。</p> <p>所以，在开始之前，你应该定义好哪些模型属性是可以被批量赋值的。你可以在模型上使用 $fillable 属性来实现。例如，让我们让 Flight 模型的 name 属性可以被批量赋值：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Flight extends Model
+{
+    /**
+     * 可以被批量赋值的属性。
+     *
+     * @var array
+     */
+    protected $fillable = ['name'];
+}
+</code></pre></div><p>一旦我们已经设置好可以被批量赋值的属性，便能通过 create 方法来添加一条新记录到数据库。create 方法将返回已经被保存的模型实例：</p> <div class="language- extra-class"><pre class="language-text"><code>$flight = App\Flight::create(['name' =&gt; 'Flight 10']);
+</code></pre></div><p>如果你已经有一个 model 实例，你可以使用一个数组传递给 fill 方法：</p> <div class="language- extra-class"><pre class="language-text"><code>$flight-&gt;fill(['name' =&gt; 'Flight 22']);
+</code></pre></div><h3 id="guarding-attributes"><a href="#guarding-attributes" aria-hidden="true" class="header-anchor">#</a> Guarding Attributes#</h3> <p>$fillable 作为一个可以被批量赋值的属性「白名单」。另外你也可以选择使用 $guarded。$guarded 属性应该包含一个你不想要被批量赋值的属性数组。所有不在数组里面的其它属性都可以被批量赋值。因此，$guarded 的功能更类似一个「黑名单」。使用的时候应该只选择 $fillable 或 $guarded 中的其中一个。 下面这个例子中，除了 price 所有的属性都可以被批量赋值：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Flight extends Model
+{
+    /**
+     * 不可被批量赋值的属性。
+     *
+     * @var array
+     */
+    protected $guarded = ['price'];
+}
+</code></pre></div><p>如果你想让所有的属性都可以被批量赋值，你应该定义 $guarded为空数组。</p> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * 不可被批量赋值的属性。
+ *
+ * @var array
+ */
+protected $guarded = [];
+</code></pre></div><h3 id="其它创建的方法"><a href="#其它创建的方法" aria-hidden="true" class="header-anchor">#</a> 其它创建的方法#</h3> <h4 id="firstorcreate-firstornew"><a href="#firstorcreate-firstornew" aria-hidden="true" class="header-anchor">#</a> firstOrCreate/ firstOrNew#</h4> <p>还有两种其它方法，你可以用来通过属性批量赋值创建你的模型：firstOrCreate 和 firstOrNew。firstOrCreate 方法将会使用指定的字段／值对，来尝试寻找数据库中的记录。如果在数据库中找不到模型，则会使用指定的属性来添加一条记录。</p> <p>firstOrNew 方法类似 firstOrCreate 方法，它会尝试使用指定的属性在数据库中寻找符合的纪录。如果模型未被找到，将会返回一个新的模型实例。请注意 firstOrnew 返回的模型还尚未保存到数据库。你需要通过手动调用 save 方法来保存它：</p> <div class="language- extra-class"><pre class="language-text"><code>// 通过name属性检索航班，当结果不存在时创建它...
+$flight = App\Flight::firstOrCreate(['name' =&gt; 'Flight 10']);
+
+// 通过name属性检索航班，当结果不存在的时候用name属性和delayed属性去创建它
+$flight = App\Flight::firstOrCreate(
+    ['name' =&gt; 'Flight 10'], ['delayed' =&gt; 1]
+);
+
+// 通过name属性检索航班，当结果不存在时实例化一个新实例...
+$flight = App\Flight::firstOrNew(['name' =&gt; 'Flight 10']);
+
+// 通过name属性检索航班，当结果不存在的时候用name属性和delayed属性去实例化一个新实例
+$flight = App\Flight::firstOrNew(
+    ['name' =&gt; 'Flight 10'], ['delayed' =&gt; 1]
+);
+</code></pre></div><h4 id="updateorcreate"><a href="#updateorcreate" aria-hidden="true" class="header-anchor">#</a> updateOrCreate#</h4> <p>其次，你可能会碰到模型已经存在则更新，否则创建新模型的情形，Laravel 提供了一个 updateOrCreate 方法来一步完成该操作，类似 firstOrCreate 方法， updateOrCreate 方法会持久化模型，所以无需调用 save() :</p> <div class="language- extra-class"><pre class="language-text"><code>// If there's a flight from Oakland to San Diego, set the price to $99.
+// If no matching model exists, create one.
+$flight = App\Flight::updateOrCreate(
+    ['departure' =&gt; 'Oakland', 'destination' =&gt; 'San Diego'],
+    ['price' =&gt; 99]
+);
+</code></pre></div><h2 id="删除模型"><a href="#删除模型" aria-hidden="true" class="header-anchor">#</a> 删除模型</h2> <p>要删除模型，必须在模型实例上调用 delete 方法：</p> <div class="language- extra-class"><pre class="language-text"><code>$flight = App\Flight::find(1);
+
+$flight-&gt;delete();
+</code></pre></div><h3 id="通过主键来删除现有的模型"><a href="#通过主键来删除现有的模型" aria-hidden="true" class="header-anchor">#</a> 通过主键来删除现有的模型#</h3> <p>在上面的例子中，我们在调用 delete 方法之前会先从数据库中取回模型。不过，如果你已知道了模型中的主键，则可以不用取回模型就能直接删除它。若要直接删除，请调用 destroy 方法：</p> <div class="language- extra-class"><pre class="language-text"><code>App\Flight::destroy(1);
+
+App\Flight::destroy([1, 2, 3]);
+
+App\Flight::destroy(1, 2, 3);
+</code></pre></div><h3 id="通过查询来删除模型"><a href="#通过查询来删除模型" aria-hidden="true" class="header-anchor">#</a> 通过查询来删除模型#</h3> <p>当然，你也可以运行在一组模型删除查询。在这个例子中，我们会删除被标记为不活跃的所有航班。 像批量更新那样，批量删除不会删除的任何被删除的模型的事件：</p> <div class="language- extra-class"><pre class="language-text"><code>$deletedRows = App\Flight::where('active', 0)-&gt;delete();    
+</code></pre></div><p>(当使用 Eloquent 批量删除语句时，deleting 和 deleted 模型事件不会在被删除模型实例上触发。因为删除语句执行时，不会检索回模型实例)</p> <h3 id="软删除"><a href="#软删除" aria-hidden="true" class="header-anchor">#</a> 软删除#</h3> <p>除了从数据库中移除实际记录，Eloquent 也可以「软删除」模型。当模型被软删除时，它们并不会真的从数据库中被移除。而是会在模型上设置一个 deleted_at 属性并将其添加到数据库。如果模型有一个非空值 deleted_at，代表模型已经被软删除了。要在模型上启动软删除，则必须在模型上使用 Illuminate\Database\Eloquent\SoftDeletes trait 并添加 deleted_at 字段到你的 $dates 属性上：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Flight extends Model
+{
+    use SoftDeletes;
+
+    /**
+     * 需要被转换成日期的属性。
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at'];
+}
+</code></pre></div><p>当然，你也应该添加 deleted_at 字段到数据表中。Laravel 结构生成器 包含了一个用来创建此字段的辅助函数：</p> <div class="language- extra-class"><pre class="language-text"><code>Schema::table('flights', function ($table) {
+    $table-&gt;softDeletes();
+});
+</code></pre></div><p>现在，当你在模型上调用 delete 方法时，deleted_at 字段将会被设置成目前的日期和时间。而且，当查询有启用软删除的模型时，被软删除的模型将会自动从所有查询结果中排除。</p> <p>要确认指定的模型实例是否已经被软删除，可以使用 trashed 方法：</p> <div class="language- extra-class"><pre class="language-text"><code>if ($flight-&gt;trashed()) {
+    //
+}
+</code></pre></div><h3 id="查询被软删除的模型"><a href="#查询被软删除的模型" aria-hidden="true" class="header-anchor">#</a> 查询被软删除的模型#</h3> <p>包含被软删除的模型#</p> <p>如上所述，被软删除的模型将会自动从所有的查询结果中排除。不过，你可以通过在查询中调用 withTrashed 方法来强制查询已被软删除的模型：</p> <div class="language- extra-class"><pre class="language-text"><code>$flights = App\Flight::withTrashed()
+                -&gt;where('account_id', 1)
+                -&gt;get();
+</code></pre></div><p>withTrashed 方法也可以被用在 关联 查询：</p> <div class="language- extra-class"><pre class="language-text"><code>$flight-&gt;history()-&gt;withTrashed()-&gt;get();
+</code></pre></div><h4 id="只取出软删除数据"><a href="#只取出软删除数据" aria-hidden="true" class="header-anchor">#</a> 只取出软删除数据#</h4> <ul><li>onlyTrashed 会只取出软删除数据：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$flights = App\Flight::onlyTrashed()
+                -&gt;where('airline_id', 1)
+                -&gt;get();
+</code></pre></div><h4 id="恢复被软删除的模型"><a href="#恢复被软删除的模型" aria-hidden="true" class="header-anchor">#</a> 恢复被软删除的模型#</h4> <p>有时候你可能希望「取消删除」一个已被软删除的模型。要恢复一个已被软删除的模型到有效状态，则可在模型实例上使用 restore 方法：</p> <div class="language- extra-class"><pre class="language-text"><code>$flight-&gt;restore();
+
+</code></pre></div><p>你也可以在查询上使用 restore 方法来快速地恢复多个模型：</p> <div class="language- extra-class"><pre class="language-text"><code>App\Flight::withTrashed()
+        -&gt;where('airline_id', 1)
+        -&gt;restore();
+</code></pre></div><p>与 withTrashed 方法类似，restore 方法也可以被用在 关联 查询上:</p> <div class="language- extra-class"><pre class="language-text"><code>$flight-&gt;history()-&gt;restore();
+</code></pre></div><h4 id="永久地删除模型"><a href="#永久地删除模型" aria-hidden="true" class="header-anchor">#</a> 永久地删除模型#</h4> <p>有时候你可能需要真正地从数据库移除模型。要永久地从数据库移除一个已被软删除的模型，则可使用 forceDelete 方法：</p> <div class="language- extra-class"><pre class="language-text"><code>// 强制删除单个模型实例...
+$flight-&gt;forceDelete();
+
+// 强制删除所有相关模型...
+$flight-&gt;history()-&gt;forceDelete();
+</code></pre></div><h2 id="查询作用域"><a href="#查询作用域" aria-hidden="true" class="header-anchor">#</a> 查询作用域</h2> <h3 id="全局作用域"><a href="#全局作用域" aria-hidden="true" class="header-anchor">#</a> 全局作用域#</h3> <p>全局作用域允许我们为给定模型的所有查询添加条件约束。Laravel 自带的 软删除功能 就使用了全局作用域来从数据库中拉出所有没有被删除的模型。编写自定义的全局作用域可以提供一种方便的、简单的方式，来确保给定模型的每个查询都有特定的条件约束。</p> <h3 id="编写全局作用域"><a href="#编写全局作用域" aria-hidden="true" class="header-anchor">#</a> 编写全局作用域#</h3> <p>自定义全局作用域很简单，首先定义一个实现 Illuminate\Database\Eloquent\Scope 接口的类，该接口要求你实现一个方法：apply。需要的话可以在 apply 方法中添加 where 条件到查询：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App\Scopes;
+
+use Illuminate\Database\Eloquent\Scope;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
+
+class AgeScope implements Scope
+{
+    /**
+     * 应用作用域
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $builder
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @return void
+     */
+    public function apply(Builder $builder, Model $model)
+    {
+        return $builder-&gt;where('age', '&gt;', 200);
+    }
+}
+</code></pre></div><p>Laravel 没有规定你需要把这些类放置于哪个文件夹，你可以自由在 app 文件夹下创建 Scopes 文件夹来存放。</p> <h3 id="应用全局作用域"><a href="#应用全局作用域" aria-hidden="true" class="header-anchor">#</a> 应用全局作用域#</h3> <p>要将全局作用域分配给模型，需要重写给定模型的 boot 方法并使用 addGlobalScope 方法：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use App\Scopes\AgeScope;
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model
+{
+    /**
+     * 数据模型的启动方法
+     *
+     * @return void
+     */
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope(new AgeScope);
+    }
+}
+</code></pre></div><p>添加作用域后，如果使用 User::all() 查询则会生成如下SQL语句：</p> <div class="language- extra-class"><pre class="language-text"><code>select * from `users` where `age` &gt; 200
+</code></pre></div><h3 id="匿名的全局作用域"><a href="#匿名的全局作用域" aria-hidden="true" class="header-anchor">#</a> 匿名的全局作用域#</h3> <p>Eloquent 还允许我们使用闭包定义全局作用域，这在实现简单作用域的时候特别有用，这样的话，我们就没必要定义一个单独的类了：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
+
+class User extends Model
+{
+    /**
+     * 数据模型的启动方法
+     *
+     * @return void
+     */
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope('age', function(Builder $builder) {
+            $builder-&gt;where('age', '&gt;', 200);
+        });
+    }
+}
+</code></pre></div><p>我们还可以通过以下方式，利用 age 标识符来移除全局作用：</p> <div class="language- extra-class"><pre class="language-text"><code>User::withoutGlobalScope('age')-&gt;get();
+</code></pre></div><h3 id="移除全局作用域"><a href="#移除全局作用域" aria-hidden="true" class="header-anchor">#</a> 移除全局作用域#</h3> <p>如果想要在给定查询中移除指定全局作用域，可以使用 withoutGlobalScope：</p> <div class="language- extra-class"><pre class="language-text"><code>User::withoutGlobalScope(AgeScope::class)-&gt;get();
+</code></pre></div><p>如果你想要移除某几个或全部全局作用域，可以使用 withoutGlobalScopes 方法：</p> <div class="language- extra-class"><pre class="language-text"><code>User::withoutGlobalScopes()-&gt;get();
+
+User::withoutGlobalScopes([FirstScope::class, SecondScope::class])-&gt;get();
+</code></pre></div><h3 id="本地作用域"><a href="#本地作用域" aria-hidden="true" class="header-anchor">#</a> 本地作用域#</h3> <p>本地作用域允许我们定义通用的约束集合以便在应用中复用。例如，你可能经常需要获取最受欢迎的用户，要定义这样的一个作用域，只需简单在对应 Eloquent 模型方法前加上一个 scope 前缀，作用域总是返回查询构建器</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model
+{
+    /**
+     * 限制查询只包括受欢迎的用户。
+     *
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopePopular($query)
+    {
+        return $query-&gt;where('votes', '&gt;', 100);
+    }
+
+    /**
+     * 限制查询只包括活跃的用户。
+     *
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeActive($query)
+    {
+        return $query-&gt;where('active', 1);
+    }
+}
+</code></pre></div><h3 id="利用查询范围"><a href="#利用查询范围" aria-hidden="true" class="header-anchor">#</a> 利用查询范围#</h3> <p>一旦定义了范围，则可以在查询模型时调用范围方法。在进行方法调用时不需要加上 scope 前缀。你甚至可以链式调用不同的范围，如：</p> <div class="language- extra-class"><pre class="language-text"><code>$users = App\User::popular()-&gt;active()-&gt;orderBy('created_at')-&gt;get();$users = App\User::popular()-&gt;active()-&gt;orderBy('created_at')-&gt;get();
+</code></pre></div><h3 id="动态范围"><a href="#动态范围" aria-hidden="true" class="header-anchor">#</a> 动态范围#</h3> <p>有时候，你可能希望定义一个可接受参数的范围。这时只需给你的范围加上额外的参数即可。范围参数应该被定义在 $query 参数之后：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model
+{
+    /**
+     * 限制查询只包括指定类型的用户。
+     *
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeOfType($query, $type)
+    {
+        return $query-&gt;where('type', $type);
+    }
+}
+</code></pre></div><p>现在，你可以在范围调用时传递参数：</p> <div class="language- extra-class"><pre class="language-text"><code>$users = App\User::ofType('admin')-&gt;get();
+</code></pre></div><h2 id="事件观察器"><a href="#事件观察器" aria-hidden="true" class="header-anchor">#</a> 事件观察器</h2> <p>Eloquent 模型会触发许多事件，让你在模型的生命周期的多个时间点进行监控： creating, created, updating, updated, saving, saved, deleting, deleted, restoring, restored.</p> <p>事件让你每当有特定的模型类在数据库保存或更新时，执行代码。</p> <p>当一个新模型被初次保存将会触发 creating 以及 created 事件。如果一个模型已经存在于数据库且调用了 save 方法，将会触发 updating 和 updated 事件。在这两种情况下都会触发 saving 和 saved 事件。</p> <p>开始前，在你的 Eloquent 模型上定义一个 $dispatchesEvents 属性，将 Eloquent 模型的生命周期的各个点映射到你的 事件类 中。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App;
+
+use App\Events\UserSaved;
+use App\Events\UserDeleted;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
+class User extends Authenticatable
+{
+    use Notifiable;
+
+    /**
+     * 模型的事件映射。
+     *
+     * @var array
+     */
+    protected $dispatchesEvents = [
+        'saved' =&gt; UserSaved::class,
+        'deleted' =&gt; UserDeleted::class,
+    ];
+}
+</code></pre></div><h3 id="观察者"><a href="#观察者" aria-hidden="true" class="header-anchor">#</a> 观察者#</h3> <p>如果你在一个给定的模型中监听许多事件，您可以使用观察者将所有监听器变成一个类。观察者类里的方法名应该反映Eloquent想监听的事件。 每种方法接收 model 作为其唯一的参数。 Laravel不包括观察者默认目录，所以你可以创建任何你喜欢你的目录来存放：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App\Observers;
+
+use App\User;
+
+class UserObserver
+{
+    /**
+     * 监听用户创建的事件。
+     *
+     * @param  User  $user
+     * @return void
+     */
+    public function created(User $user)
+    {
+        //
+    }
+
+    /**
+     * 监听用户删除事件。
+     *
+     * @param  User  $user
+     * @return void
+     */
+    public function deleting(User $user)
+    {
+        //
+    }
+}
+</code></pre></div><p>要注册一个观察者，需要用模型中的observe方法去观察。你可以在你的服务提供商之一的boot方法中注册观察者。在这个例子中，我们将在AppServiceProvider注册观察者：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+namespace App\Providers;
+
+use App\User;
+use App\Observers\UserObserver;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * 运行所有应用.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        User::observe(UserObserver::class);
+    }
+
+    /**
+     * 注册服务提供.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+}
+</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">3/16/2020, 12:11:08 AM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.8f18e5fd.js" defer></script><script src="/assets/js/80.02161799.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>发布平台开发中Vue相关问题积累与解决 | 一兵的博客</title>
+    <meta name="description" content="不畏浮云遮望眼，直挂云帆济沧海！">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.52b48649.css" as="style"><link rel="preload" href="/assets/js/app.8f18e5fd.js" as="script"><link rel="preload" href="/assets/js/100.3acc8c3a.js" as="script"><link rel="prefetch" href="/assets/js/10.71f09648.js"><link rel="prefetch" href="/assets/js/101.8f71d491.js"><link rel="prefetch" href="/assets/js/102.6c1184ca.js"><link rel="prefetch" href="/assets/js/11.364bb21f.js"><link rel="prefetch" href="/assets/js/12.1cb022b8.js"><link rel="prefetch" href="/assets/js/13.335bb278.js"><link rel="prefetch" href="/assets/js/14.f2baee24.js"><link rel="prefetch" href="/assets/js/15.cf6c6320.js"><link rel="prefetch" href="/assets/js/16.7a462aaf.js"><link rel="prefetch" href="/assets/js/17.543ddbc3.js"><link rel="prefetch" href="/assets/js/18.e2fddc95.js"><link rel="prefetch" href="/assets/js/19.4b29315e.js"><link rel="prefetch" href="/assets/js/2.8d9a8772.js"><link rel="prefetch" href="/assets/js/20.17236317.js"><link rel="prefetch" href="/assets/js/21.57a4719e.js"><link rel="prefetch" href="/assets/js/22.11e5b2ff.js"><link rel="prefetch" href="/assets/js/23.e9e1edfe.js"><link rel="prefetch" href="/assets/js/24.12e5ccb4.js"><link rel="prefetch" href="/assets/js/25.82d489d0.js"><link rel="prefetch" href="/assets/js/26.0e09b21f.js"><link rel="prefetch" href="/assets/js/27.abcfd977.js"><link rel="prefetch" href="/assets/js/28.4716e22e.js"><link rel="prefetch" href="/assets/js/29.f589746e.js"><link rel="prefetch" href="/assets/js/3.570ec1d8.js"><link rel="prefetch" href="/assets/js/30.5f5bc6ba.js"><link rel="prefetch" href="/assets/js/31.90d2c347.js"><link rel="prefetch" href="/assets/js/32.0bef948f.js"><link rel="prefetch" href="/assets/js/33.2a6c6aa7.js"><link rel="prefetch" href="/assets/js/34.900a0b5f.js"><link rel="prefetch" href="/assets/js/35.12d6f746.js"><link rel="prefetch" href="/assets/js/36.ac774b00.js"><link rel="prefetch" href="/assets/js/37.ef05dd90.js"><link rel="prefetch" href="/assets/js/38.939c6332.js"><link rel="prefetch" href="/assets/js/39.353619f6.js"><link rel="prefetch" href="/assets/js/4.a4cfb050.js"><link rel="prefetch" href="/assets/js/40.0b129163.js"><link rel="prefetch" href="/assets/js/41.7176df99.js"><link rel="prefetch" href="/assets/js/42.b03adce3.js"><link rel="prefetch" href="/assets/js/43.098ca71d.js"><link rel="prefetch" href="/assets/js/44.bf752f35.js"><link rel="prefetch" href="/assets/js/45.b7ef827e.js"><link rel="prefetch" href="/assets/js/46.48d10767.js"><link rel="prefetch" href="/assets/js/47.8e1f6691.js"><link rel="prefetch" href="/assets/js/48.02fabbe2.js"><link rel="prefetch" href="/assets/js/49.f47ebe04.js"><link rel="prefetch" href="/assets/js/5.5ed2dc47.js"><link rel="prefetch" href="/assets/js/50.ba1abd6c.js"><link rel="prefetch" href="/assets/js/51.e4293525.js"><link rel="prefetch" href="/assets/js/52.9b458637.js"><link rel="prefetch" href="/assets/js/53.5cec51ad.js"><link rel="prefetch" href="/assets/js/54.985aca3f.js"><link rel="prefetch" href="/assets/js/55.38e8c848.js"><link rel="prefetch" href="/assets/js/56.d0dd0b3d.js"><link rel="prefetch" href="/assets/js/57.e32ed0ba.js"><link rel="prefetch" href="/assets/js/58.71ec5ec4.js"><link rel="prefetch" href="/assets/js/59.220a226d.js"><link rel="prefetch" href="/assets/js/6.4c6d031d.js"><link rel="prefetch" href="/assets/js/60.6681db6e.js"><link rel="prefetch" href="/assets/js/61.14e902b7.js"><link rel="prefetch" href="/assets/js/62.1104f7db.js"><link rel="prefetch" href="/assets/js/63.f525feb0.js"><link rel="prefetch" href="/assets/js/64.1dd8e9d8.js"><link rel="prefetch" href="/assets/js/65.896d29c9.js"><link rel="prefetch" href="/assets/js/66.6dfeabff.js"><link rel="prefetch" href="/assets/js/67.a9c6ceeb.js"><link rel="prefetch" href="/assets/js/68.d165b7df.js"><link rel="prefetch" href="/assets/js/69.9c31997f.js"><link rel="prefetch" href="/assets/js/7.8763523a.js"><link rel="prefetch" href="/assets/js/70.d6e782bb.js"><link rel="prefetch" href="/assets/js/71.cc306843.js"><link rel="prefetch" href="/assets/js/72.ea3b7336.js"><link rel="prefetch" href="/assets/js/73.1400043a.js"><link rel="prefetch" href="/assets/js/74.717f95d1.js"><link rel="prefetch" href="/assets/js/75.01c737f8.js"><link rel="prefetch" href="/assets/js/76.9d9cdf15.js"><link rel="prefetch" href="/assets/js/77.8a54ea5b.js"><link rel="prefetch" href="/assets/js/78.a843b7d3.js"><link rel="prefetch" href="/assets/js/79.0ccb3037.js"><link rel="prefetch" href="/assets/js/8.a71b4a6b.js"><link rel="prefetch" href="/assets/js/80.02161799.js"><link rel="prefetch" href="/assets/js/81.7958bf86.js"><link rel="prefetch" href="/assets/js/82.72fe4c77.js"><link rel="prefetch" href="/assets/js/83.cc46616b.js"><link rel="prefetch" href="/assets/js/84.2884b510.js"><link rel="prefetch" href="/assets/js/85.daa2ce92.js"><link rel="prefetch" href="/assets/js/86.adae1799.js"><link rel="prefetch" href="/assets/js/87.46d6479c.js"><link rel="prefetch" href="/assets/js/88.b4bea9b3.js"><link rel="prefetch" href="/assets/js/89.c97cf353.js"><link rel="prefetch" href="/assets/js/9.3cb6b278.js"><link rel="prefetch" href="/assets/js/90.d76d7f38.js"><link rel="prefetch" href="/assets/js/91.0b44c3d0.js"><link rel="prefetch" href="/assets/js/92.b306e484.js"><link rel="prefetch" href="/assets/js/93.49777a1d.js"><link rel="prefetch" href="/assets/js/94.043d967e.js"><link rel="prefetch" href="/assets/js/95.5db7943e.js"><link rel="prefetch" href="/assets/js/96.71ab4028.js"><link rel="prefetch" href="/assets/js/97.417d6475.js"><link rel="prefetch" href="/assets/js/98.3606a8f3.js"><link rel="prefetch" href="/assets/js/99.e84f4f12.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.52b48649.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">一兵的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yuque.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about-me.html" class="nav-link">关于我</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yuque.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about-me.html" class="nav-link">关于我</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>H5与Hybrid</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/hybrid/h5/" class="sidebar-link">H5开发</a></li><li><a href="/hybrid/native/" class="sidebar-link">Hybrid混合开发</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/css/" class="sidebar-link">CSS目录</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Javascript</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/javascript/" class="sidebar-link">Javascript</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>前端框架</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vue/" class="sidebar-link">Vue相关</a></li><li><a href="/react/" class="sidebar-link">React相关</a></li><li><a href="/angular/" class="sidebar-link">Angular相关</a></li><li><a href="/node/" class="sidebar-link">Node相关</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>团队协作与工程化</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/structure/" class="sidebar-link">团队协作与工程化</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>服务器开发</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/server/" class="sidebar-link">服务器开发</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>计算机基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/computer/" class="sidebar-link">计算机基础</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="发布平台开发中vue相关问题积累与解决"><a href="#发布平台开发中vue相关问题积累与解决" aria-hidden="true" class="header-anchor">#</a> 发布平台开发中Vue相关问题积累与解决</h1> <p></p><div class="table-of-contents"><ul><li><a href="#vue的底层原理实现">Vue的底层原理实现</a></li><li><a href="#vue组件的生命周期示例图-https-cn-vuejs-org-v2-guide-instance-html-e7-94-9f-e5-91-bd-e5-91-a8-e6-9c-9f-e5-9b-be-e7-a4-ba">Vue组件的生命周期示例图</a></li><li><a href="#打包构建资源引用问题">打包构建资源引用问题</a><ul><li><a href="#根据环境变量的不同构建不同环境的代码">根据环境变量的不同构建不同环境的代码</a></li><li><a href="#css引用字体路径不正确的问题">CSS引用字体路径不正确的问题</a></li></ul></li><li><a href="#计算属性">计算属性</a></li><li><a href="#vue中的render渲染函数">vue中的render渲染函数</a></li><li><a href="#vuex全局状态管理的问题">vuex全局状态管理的问题</a></li><li><a href="#路由设置">路由设置</a><ul><li><a href="#路有监听">路有监听</a></li><li><a href="#路由设置的问题">路由设置的问题</a></li></ul></li><li><a href="#axios设置问题">axios设置问题</a></li><li><a href="#布局flex">布局Flex</a></li><li><a href="#promise异步返回问题">promise异步返回问题</a><ul><li><a href="#promise基本使用">promise基本使用</a></li><li><a href="#promise实现原理">Promise实现原理</a></li></ul></li></ul></div><p></p> <h2 id="vue的底层原理实现"><a href="#vue的底层原理实现" aria-hidden="true" class="header-anchor">#</a> Vue的底层原理实现</h2> <h2 id="vue组件的生命周期示例图"><a href="#vue组件的生命周期示例图" aria-hidden="true" class="header-anchor">#</a> <a href="https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA" target="_blank" rel="noopener noreferrer">Vue组件的生命周期示例图<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h2> <h2 id="打包构建资源引用问题"><a href="#打包构建资源引用问题" aria-hidden="true" class="header-anchor">#</a> 打包构建资源引用问题</h2> <h3 id="根据环境变量的不同构建不同环境的代码"><a href="#根据环境变量的不同构建不同环境的代码" aria-hidden="true" class="header-anchor">#</a> 根据环境变量的不同构建不同环境的代码</h3> <p>1、在公共Js中根据生产环境、测试环境和开发环境域名不同来定义不同的域名</p> <div class="language- extra-class"><pre class="language-text"><code>// 示例
+const production = host.indexOf(&quot;static.watch.okii.com&quot;) &gt; -1;
+
+// 定位接口域名
+export const location_domain = production
+    ? `${protocol}//location.watch.okii.com`
+    : `${protocol}//location.module.okii.com`;
+    
+</code></pre></div><p>2、在构建的时候根据node环境变量来判断来构建打包</p> <p>示例参考
+<a href="https://www.webpackjs.com/guides/production/#%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener noreferrer">webpack生产环境官方配置说明<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="css引用字体路径不正确的问题"><a href="#css引用字体路径不正确的问题" aria-hidden="true" class="header-anchor">#</a> CSS引用字体路径不正确的问题</h3> <p>http://deploy.test/front/static/css/static/fonts/ionicons.24712f6.ttf</p> <p>http://deploy.test/front/static/fonts/ionicons.24712f6.ttf</p> <p>在 webpack 出现之前，前端开发人员会使用 grunt 和 gulp 等工具来处理资源，并将它们从 /src 文件夹移动到 /dist 或 /build 目录中。同样方式也被用于 JavaScript 模块，但是，像 webpack 这样的工具，将动态打包(dynamically bundle)所有依赖项（创建所谓的依赖图(dependency graph)）。这是极好的创举，因为现在每个模块都可以_明确表述它自身的依赖，我们将避免打包未使用的模块。</p> <p>webpack 最出色的功能之一就是，除了 JavaScript，还可以通过 loader 引入任何其他类型的文件。也就是说，以上列出的那些 JavaScript 的优点（例如显式依赖），同样可以用来构建网站或 web 应用程序中的所有非 JavaScript 内容。让我们从 CSS 开始起步，或许你可能已经熟悉了这个设置过程。</p> <p><a href="https://www.webpackjs.com/guides/asset-management/#loading-css" target="_blank" rel="noopener noreferrer">示例说明参考官方配置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="计算属性"><a href="#计算属性" aria-hidden="true" class="header-anchor">#</a> 计算属性</h2> <ul><li>计算属性的初衷</li></ul> <blockquote><p>设计的初衷是用于简单运算的，避免在模板中有太多的计算。</p></blockquote> <ul><li>计算属性缓存与方法</li> <li>计算属性与侦听器</li> <li><a href="https://juejin.im/post/5b98c4da6fb9a05d353c5fd7" target="_blank" rel="noopener noreferrer">计算属性的基本实现原理<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="vue中的render渲染函数"><a href="#vue中的render渲染函数" aria-hidden="true" class="header-anchor">#</a> vue中的render渲染函数</h2> <h2 id="vuex全局状态管理的问题"><a href="#vuex全局状态管理的问题" aria-hidden="true" class="header-anchor">#</a> vuex全局状态管理的问题</h2> <p><a href="https://vuex.vuejs.org/zh/guide/" target="_blank" rel="noopener noreferrer">vuex官方网站<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>状态管理的问题</p> <h2 id="路由设置"><a href="#路由设置" aria-hidden="true" class="header-anchor">#</a> 路由设置</h2> <p>子路由、嵌套路由</p> <h3 id="路有监听"><a href="#路有监听" aria-hidden="true" class="header-anchor">#</a> 路有监听</h3> <h3 id="路由设置的问题"><a href="#路由设置的问题" aria-hidden="true" class="header-anchor">#</a> 路由设置的问题</h3> <h2 id="axios设置问题"><a href="#axios设置问题" aria-hidden="true" class="header-anchor">#</a> axios设置问题</h2> <p><a href="https://www.kancloud.cn/yunye/axios/234845" target="_blank" rel="noopener noreferrer">详细查看中文文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <ul><li>全局设置</li></ul> <div class="language- extra-class"><pre class="language-text"><code>axios.defaults.baseURL = 'https://api.example.com';
+axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+</code></pre></div><ul><li>拦截器</li></ul> <blockquote><p>在请求或响应被 then 或 catch 处理前拦截它们。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>// 添加请求拦截器
+axios.interceptors.request.use(function (config) {
+    // 在发送请求之前做些什么
+    return config;
+  }, function (error) {
+    // 对请求错误做些什么
+    return Promise.reject(error);
+  });
+
+// 添加响应拦截器
+axios.interceptors.response.use(function (response) {
+    // 对响应数据做点什么
+    return response;
+  }, function (error) {
+    // 对响应错误做点什么
+    return Promise.reject(error);
+  });
+</code></pre></div><blockquote><p>如果你想在稍后移除拦截器，可以这样：</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>var myInterceptor = axios.interceptors.request.use(function () {/*...*/});
+axios.interceptors.request.eject(myInterceptor);
+</code></pre></div><blockquote><p>可以使用 validateStatus 配置选项定义一个自定义 HTTP 状态码的错误范围。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>axios.get('/user/12345', {
+  validateStatus: function (status) {
+    return status &lt; 500; // 状态码在大于或等于500时才会 reject
+  }
+})
+</code></pre></div><h2 id="布局flex"><a href="#布局flex" aria-hidden="true" class="header-anchor">#</a> 布局Flex</h2> <p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener noreferrer">Flex参考文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="promise异步返回问题"><a href="#promise异步返回问题" aria-hidden="true" class="header-anchor">#</a> promise异步返回问题</h2> <h3 id="promise基本使用"><a href="#promise基本使用" aria-hidden="true" class="header-anchor">#</a> promise基本使用</h3> <div class="language- extra-class"><pre class="language-text"><code>const promise = new Promise(function(resolve, reject) {
+  // ... some code
+
+  if (/* 异步操作成功 */){
+    resolve(value);
+  } else {
+    reject(error);
+  }
+});
+</code></pre></div><ul><li>介绍一下Then方法</li></ul> <p>Promise 实例具有then方法，也就是说，then方法是定义在原型对象Promise.prototype上的。它的作用是为 Promise 实例添加状态改变时的回调函数。前面说过，then方法的第一个参数是resolved状态的回调函数，第二个参数（可选）是rejected状态的回调函数。</p> <div class="language- extra-class"><pre class="language-text"><code>getJSON(&quot;/posts.json&quot;).then(function(json) {
+  return json.post;
+}).then(function(post) {
+  // ...
+});
+</code></pre></div><ul><li>catch方法</li></ul> <p>Promise.prototype.catch方法是.then(null, rejection)的别名，用于指定发生错误时的回调函数。
+另外，then方法指定的回调函数，如果运行中抛出错误，也会被catch方法捕获。</p> <div class="language- extra-class"><pre class="language-text"><code>p.then((val) =&gt; console.log('fulfilled:', val))
+  .catch((err) =&gt; console.log('rejected', err));
+
+// 等同于
+p.then((val) =&gt; console.log('fulfilled:', val))
+  .then(null, (err) =&gt; console.log(&quot;rejected:&quot;, err));
+</code></pre></div><ul><li>finally方法</li></ul> <p>用于指定不管 Promise 对象最后状态如何，都会执行的操作。该方法是 ES2018 引入标准的。</p> <ul><li>Promise.all()</li></ul> <p>Promise.all方法用于将多个 Promise 实例，包装成一个新的 Promise 实例。</p> <h3 id="promise实现原理"><a href="#promise实现原理" aria-hidden="true" class="header-anchor">#</a> Promise实现原理</h3> <ul><li>Promise 状态</li></ul> <p>Promise 必须为以下三种状态之一：等待态（Pending）、执行态（Fulfilled）和拒绝态（Rejected）。一旦Promise被resolve或reject，不能再迁移至其他任何状态（即状态 immutable）。
+为保持代码清晰，暂无异常处理。同时为表述方便，约定如下：</p> <p>fulfilled 使用 resolved 代替
+onFulfilled 使用 onResolved 代替</p> <ul><li>Promise 构造函数</li></ul> <p>从构造函数开始，我们一步步实现符合 Promsie A+ 规范的 Promise。大概描述下，Promise构造函数需要做什么事情。</p> <ul><li>初始化 Promise 状态（pending）</li> <li>初始化 then(..) 注册回调处理数组（then 方法可被同一个 promise 调用多次）</li> <li>立即执行传入的 fn 函数，传入Promise 内部 resolve、reject 函数</li> <li>...</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function Promise (fn) {
+  // 省略非 new 实例化方式处理
+  // 省略 fn 非函数异常处理
+
+  // promise 状态变量
+  // 0 - pending
+  // 1 - resolved
+  // 2 - rejected
+  this._state = 0;
+  // promise 执行结果
+  this._value = null;
+ 
+  // then(..) 注册回调处理数组
+  this._deferreds = [];
+
+  // 立即执行 fn 函数
+  try {
+    fn(value =&gt; {
+      resolve(this, value);
+    },reason =&gt; {
+      reject(this, reason);
+    })
+  } catch (err) {
+    // 处理执行 fn 异常
+    reject(this, err);
+  }
+}
+
+</code></pre></div><p>_state 和 _value 变量很容易理解，_deferreds变量做什么？规范描述：then 方法可以被同一个 promise 调用多次。为满足多次调用 then 注册回调处理，内部选择使用 _deferreds 数组存储处理对象。具体处理对象结构，见 then 函数章节。
+最后执行 fn 函数，并调用 promise 内部的私有方法 resolve 和 reject。resolve 和 reject 内部细节随后介绍。</p> <ul><li>then 函数</li></ul> <p>Promise A+提到规范专注于提供通用的 then 方法。then 方法可以被同一个 promise 调用多次，每次返回新 promise 对象 。then 方法接受两个参数onResolved、onRejected（可选）。在 promise 被 resolve 或 reject 后，所有 onResolved 或 onRejected 函数须按照其注册顺序依次回调，且调用次数不超过一次。
+根据上述，then 函数执行流程大致为：</p> <p>实例化空 promise 对象用来返回（保持then链式调用）
+构造 then(..) 注册回调处理函数结构体
+判断当前 promise 状态，pending 状态存储延迟处理对象 deferred ，非pending状态执行 onResolved 或 onRejected 回调
+...</p> <div class="language- extra-class"><pre class="language-text"><code>Promise.prototype.then = function (onResolved, onRejected) {
+
+  var res = new Promise(function () {});
+  // 使用 onResolved，onRejected 实例化处理对象 Handler
+  var deferred = new Handler(onResolved, onRejected, res);
+
+  // 当前状态为 pendding，存储延迟处理对象
+  if (this._state === 0) {
+    this._deferreds.push(deferred);
+    return res;
+  }
+
+  // 当前 promise 状态不为 pending
+  // 调用 handleResolved 执行onResolved或onRejected回调
+  handleResolved(this, deferred);
+  
+  // 返回新 promise 对象，维持链式调用
+  return res;
+};
+
+</code></pre></div><p>Handler 函数封装存储 onResolved、onRejected 函数和新生成 promise 对象。</p> <div class="language- extra-class"><pre class="language-text"><code>function Handler (onResolved, onRejected, promise) {
+  this.onResolved = typeof onResolved === 'function' ? onResolved : null;
+  this.onRejected = typeof onRejected === 'function' ? onRejected : null;
+  this.promise = promise;
+}
+
+</code></pre></div><ul><li>链式调用为什么要返回新的 promise
+如我们理解，为保证 then 函数链式调用，then 需要返回 promise 实例。但为什么返回新的 promise，而不直接返回 this 当前对象呢？看下面示例代码：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var promise2 = promise1.then(function (value) {
+  return Promise.reject(3)
+})
+</code></pre></div><p>复制代码假如 then 函数执行返回 this 调用对象本身，那么 promise2 === promise1，promise2 状态也应该等于 promise1 同为 resolved。而 onResolved 回调中返回状态为 rejected 对象。考虑到 Promise 状态一旦 resolved 或 rejected就不能再迁移，所以这里 promise2 也没办法转为回调函数返回的 rejected 状态，产生矛盾。
+handleResolved 函数功能为根据当前 promise 状态，异步执行 onResolved 或 onRejected 回调函数。因在 resolve 或 reject 函数内部同样需要相关功能，提取为单独模块。往下翻阅查看。</p> <p><a href="http://es6.ruanyifeng.com/#docs/promise" target="_blank" rel="noopener noreferrer">ECMAScript 6 - 阮一峰<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://promisesaplus.com/" target="_blank" rel="noopener noreferrer">Promises/A+ 规范<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://juejin.im/post/5a30193051882503dc53af3c" target="_blank" rel="noopener noreferrer">参考文章掘金上的文章<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">3/16/2020, 12:11:08 AM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.8f18e5fd.js" defer></script><script src="/assets/js/100.3acc8c3a.js" defer></script>
+  </body>
+</html>

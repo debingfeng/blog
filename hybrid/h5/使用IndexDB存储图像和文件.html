@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用IndexDB存储图像和文件 | 一兵的博客</title>
+    <meta name="description" content="不畏浮云遮望眼，直挂云帆济沧海！">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.52b48649.css" as="style"><link rel="preload" href="/assets/js/app.8f18e5fd.js" as="script"><link rel="preload" href="/assets/js/27.abcfd977.js" as="script"><link rel="prefetch" href="/assets/js/10.71f09648.js"><link rel="prefetch" href="/assets/js/100.3acc8c3a.js"><link rel="prefetch" href="/assets/js/101.8f71d491.js"><link rel="prefetch" href="/assets/js/102.6c1184ca.js"><link rel="prefetch" href="/assets/js/11.364bb21f.js"><link rel="prefetch" href="/assets/js/12.1cb022b8.js"><link rel="prefetch" href="/assets/js/13.335bb278.js"><link rel="prefetch" href="/assets/js/14.f2baee24.js"><link rel="prefetch" href="/assets/js/15.cf6c6320.js"><link rel="prefetch" href="/assets/js/16.7a462aaf.js"><link rel="prefetch" href="/assets/js/17.543ddbc3.js"><link rel="prefetch" href="/assets/js/18.e2fddc95.js"><link rel="prefetch" href="/assets/js/19.4b29315e.js"><link rel="prefetch" href="/assets/js/2.8d9a8772.js"><link rel="prefetch" href="/assets/js/20.17236317.js"><link rel="prefetch" href="/assets/js/21.57a4719e.js"><link rel="prefetch" href="/assets/js/22.11e5b2ff.js"><link rel="prefetch" href="/assets/js/23.e9e1edfe.js"><link rel="prefetch" href="/assets/js/24.12e5ccb4.js"><link rel="prefetch" href="/assets/js/25.82d489d0.js"><link rel="prefetch" href="/assets/js/26.0e09b21f.js"><link rel="prefetch" href="/assets/js/28.4716e22e.js"><link rel="prefetch" href="/assets/js/29.f589746e.js"><link rel="prefetch" href="/assets/js/3.570ec1d8.js"><link rel="prefetch" href="/assets/js/30.5f5bc6ba.js"><link rel="prefetch" href="/assets/js/31.90d2c347.js"><link rel="prefetch" href="/assets/js/32.0bef948f.js"><link rel="prefetch" href="/assets/js/33.2a6c6aa7.js"><link rel="prefetch" href="/assets/js/34.900a0b5f.js"><link rel="prefetch" href="/assets/js/35.12d6f746.js"><link rel="prefetch" href="/assets/js/36.ac774b00.js"><link rel="prefetch" href="/assets/js/37.ef05dd90.js"><link rel="prefetch" href="/assets/js/38.939c6332.js"><link rel="prefetch" href="/assets/js/39.353619f6.js"><link rel="prefetch" href="/assets/js/4.a4cfb050.js"><link rel="prefetch" href="/assets/js/40.0b129163.js"><link rel="prefetch" href="/assets/js/41.7176df99.js"><link rel="prefetch" href="/assets/js/42.b03adce3.js"><link rel="prefetch" href="/assets/js/43.098ca71d.js"><link rel="prefetch" href="/assets/js/44.bf752f35.js"><link rel="prefetch" href="/assets/js/45.b7ef827e.js"><link rel="prefetch" href="/assets/js/46.48d10767.js"><link rel="prefetch" href="/assets/js/47.8e1f6691.js"><link rel="prefetch" href="/assets/js/48.02fabbe2.js"><link rel="prefetch" href="/assets/js/49.f47ebe04.js"><link rel="prefetch" href="/assets/js/5.5ed2dc47.js"><link rel="prefetch" href="/assets/js/50.ba1abd6c.js"><link rel="prefetch" href="/assets/js/51.e4293525.js"><link rel="prefetch" href="/assets/js/52.9b458637.js"><link rel="prefetch" href="/assets/js/53.5cec51ad.js"><link rel="prefetch" href="/assets/js/54.985aca3f.js"><link rel="prefetch" href="/assets/js/55.38e8c848.js"><link rel="prefetch" href="/assets/js/56.d0dd0b3d.js"><link rel="prefetch" href="/assets/js/57.e32ed0ba.js"><link rel="prefetch" href="/assets/js/58.71ec5ec4.js"><link rel="prefetch" href="/assets/js/59.220a226d.js"><link rel="prefetch" href="/assets/js/6.4c6d031d.js"><link rel="prefetch" href="/assets/js/60.6681db6e.js"><link rel="prefetch" href="/assets/js/61.14e902b7.js"><link rel="prefetch" href="/assets/js/62.1104f7db.js"><link rel="prefetch" href="/assets/js/63.f525feb0.js"><link rel="prefetch" href="/assets/js/64.1dd8e9d8.js"><link rel="prefetch" href="/assets/js/65.896d29c9.js"><link rel="prefetch" href="/assets/js/66.6dfeabff.js"><link rel="prefetch" href="/assets/js/67.a9c6ceeb.js"><link rel="prefetch" href="/assets/js/68.d165b7df.js"><link rel="prefetch" href="/assets/js/69.9c31997f.js"><link rel="prefetch" href="/assets/js/7.8763523a.js"><link rel="prefetch" href="/assets/js/70.d6e782bb.js"><link rel="prefetch" href="/assets/js/71.cc306843.js"><link rel="prefetch" href="/assets/js/72.ea3b7336.js"><link rel="prefetch" href="/assets/js/73.1400043a.js"><link rel="prefetch" href="/assets/js/74.717f95d1.js"><link rel="prefetch" href="/assets/js/75.01c737f8.js"><link rel="prefetch" href="/assets/js/76.9d9cdf15.js"><link rel="prefetch" href="/assets/js/77.8a54ea5b.js"><link rel="prefetch" href="/assets/js/78.a843b7d3.js"><link rel="prefetch" href="/assets/js/79.0ccb3037.js"><link rel="prefetch" href="/assets/js/8.a71b4a6b.js"><link rel="prefetch" href="/assets/js/80.02161799.js"><link rel="prefetch" href="/assets/js/81.7958bf86.js"><link rel="prefetch" href="/assets/js/82.72fe4c77.js"><link rel="prefetch" href="/assets/js/83.cc46616b.js"><link rel="prefetch" href="/assets/js/84.2884b510.js"><link rel="prefetch" href="/assets/js/85.daa2ce92.js"><link rel="prefetch" href="/assets/js/86.adae1799.js"><link rel="prefetch" href="/assets/js/87.46d6479c.js"><link rel="prefetch" href="/assets/js/88.b4bea9b3.js"><link rel="prefetch" href="/assets/js/89.c97cf353.js"><link rel="prefetch" href="/assets/js/9.3cb6b278.js"><link rel="prefetch" href="/assets/js/90.d76d7f38.js"><link rel="prefetch" href="/assets/js/91.0b44c3d0.js"><link rel="prefetch" href="/assets/js/92.b306e484.js"><link rel="prefetch" href="/assets/js/93.49777a1d.js"><link rel="prefetch" href="/assets/js/94.043d967e.js"><link rel="prefetch" href="/assets/js/95.5db7943e.js"><link rel="prefetch" href="/assets/js/96.71ab4028.js"><link rel="prefetch" href="/assets/js/97.417d6475.js"><link rel="prefetch" href="/assets/js/98.3606a8f3.js"><link rel="prefetch" href="/assets/js/99.e84f4f12.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.52b48649.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">一兵的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yuque.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about-me.html" class="nav-link">关于我</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yuque.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about-me.html" class="nav-link">关于我</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>H5与Hybrid</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/hybrid/h5/" class="sidebar-link">H5开发</a></li><li><a href="/hybrid/native/" class="sidebar-link">Hybrid混合开发</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/css/" class="sidebar-link">CSS目录</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Javascript</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/javascript/" class="sidebar-link">Javascript</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>前端框架</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vue/" class="sidebar-link">Vue相关</a></li><li><a href="/react/" class="sidebar-link">React相关</a></li><li><a href="/angular/" class="sidebar-link">Angular相关</a></li><li><a href="/node/" class="sidebar-link">Node相关</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>团队协作与工程化</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/structure/" class="sidebar-link">团队协作与工程化</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>服务器开发</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/server/" class="sidebar-link">服务器开发</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>计算机基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/computer/" class="sidebar-link">计算机基础</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="使用indexdb存储图像和文件"><a href="#使用indexdb存储图像和文件" aria-hidden="true" class="header-anchor">#</a> 使用IndexDB存储图像和文件</h1> <p></p><div class="table-of-contents"><ul><li><a href="#使用indexdb存储图像和文件的常规步骤">使用IndexDB存储图像和文件的常规步骤</a><ul><li><a href="#_1、创建或打开数据库。">1、创建或打开数据库。</a></li><li><a href="#_2、创建一个objectstore（如果它尚不存在）">2、创建一个objectStore（如果它尚不存在）</a></li><li><a href="#_3、将图像文件检索为blob">3、将图像文件检索为blob</a></li><li><a href="#_4、初始化一个数据库事物">4、初始化一个数据库事物</a></li><li><a href="#_5、保存图像blob到数据库中去">5、保存图像blob到数据库中去</a></li><li><a href="#_6、读出保存的文件并从中创建objecturl并将其设置为页面中图像元素的src">6、读出保存的文件并从中创建ObjectURL并将其设置为页面中图像元素的src</a></li><li><a href="#最后完整代码">最后完整代码</a></li><li><a href="#浏览器支持">浏览器支持</a></li><li><a href="#github源码-https-github-com-robnyman-robnyman-github-com-tree-master-html5demos-indexeddb">Github源码</a></li></ul></li></ul></div><p></p> <p>有一天，我们写了关于如何在localStorage中保存图像和文件的文章，它是关于我们今天可用的实用主义。 然而，localStorage有一些性能影响 - 我们将在稍后的博客中讨论这个问题 - 并且未来期望的方法是使用IndexedDB。 在这里，我将向您介绍如何在IndexedDB中存储图像和文件，然后通过ObjectURL呈现它们。</p> <p><strong>本文是翻译过来的，原文在这里<a href="https://hacks.mozilla.org/2012/02/storing-images-and-files-in-indexeddb/" target="_blank" rel="noopener noreferrer">Storing images and files in IndexedDB<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></strong></p> <p><strong>关于作者： <a href="https://robertnyman.com/" target="_blank" rel="noopener noreferrer">Robert Nyman [Editor emeritus]<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></strong></p> <p>Technical Evangelist &amp; Editor of Mozilla Hacks. Gives talks &amp; blogs about HTML5, JavaScript &amp; the Open Web. Robert is a strong believer in HTML5 and the Open Web and has been working since 1999 with Front End development for the web - in Sweden and in New York City. He regularly also blogs at http://robertnyman.com and loves to travel and meet people.</p> <h2 id="使用indexdb存储图像和文件的常规步骤"><a href="#使用indexdb存储图像和文件的常规步骤" aria-hidden="true" class="header-anchor">#</a> 使用IndexDB存储图像和文件的常规步骤</h2> <p>首先，我们来谈谈我们将创建一个IndexedDB数据库，将文件保存到其中然后将其读出并显示在页面中的步骤：</p> <ul><li>1、创建或打开数据库</li> <li>2、创建一个objectStore</li> <li>3、将图像文件检索为blob</li> <li>4、初始化一个数据库事物</li> <li>5、保存图像blob到数据库中去</li> <li>6、读出保存的文件并从中创建ObjectURL并将其设置为页面中图像元素的src</li></ul> <h3 id="_1、创建或打开数据库。"><a href="#_1、创建或打开数据库。" aria-hidden="true" class="header-anchor">#</a> 1、创建或打开数据库。</h3> <div class="language- extra-class"><pre class="language-text"><code>
+// IndexedDB
+window.indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.OIndexedDB || window.msIndexedDB,
+    IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.OIDBTransaction || window.msIDBTransaction,
+    dbVersion = 1;
+
+/* 
+    Note: The recommended way to do this is assigning it to window.indexedDB,
+    to avoid potential issues in the global scope when web browsers start 
+    removing prefixes in their implementations.
+    You can assign it to a varible, like var indexedDB… but then you have 
+    to make sure that the code is contained within a function.
+*/
+
+// Create/open database
+var request = indexedDB.open(&quot;elephantFiles&quot;, dbVersion);
+
+request.onsuccess = function (event) {
+    console.log(&quot;Success creating/accessing IndexedDB database&quot;);
+    db = request.result;
+
+    db.onerror = function (event) {
+        console.log(&quot;Error creating/accessing IndexedDB database&quot;);
+    };
+    
+    // Interim solution for Google Chrome to create an objectStore. Will be deprecated
+    if (db.setVersion) {
+        if (db.version != dbVersion) {
+            var setVersion = db.setVersion(dbVersion);
+            setVersion.onsuccess = function () {
+                createObjectStore(db);
+                getImageFile();
+            };
+        }
+        else {
+            getImageFile();
+        }
+    }
+    else {
+        getImageFile();
+    }
+}
+
+// For future use. Currently only in latest Firefox versions
+request.onupgradeneeded = function (event) {
+    createObjectStore(event.target.result);
+};
+</code></pre></div><p>使用它的预期方法是在创建数据库时触发onupgradeneeded事件或获取更高版本号。 目前仅在Firefox中支持此功能，但很快将在其他Web浏览器中支持。 如果Web浏览器不支持此事件，则可以使用已弃用的setVersion方法并连接到其onsuccess事件。</p> <h3 id="_2、创建一个objectstore（如果它尚不存在）"><a href="#_2、创建一个objectstore（如果它尚不存在）" aria-hidden="true" class="header-anchor">#</a> 2、创建一个objectStore（如果它尚不存在）</h3> <div class="language- extra-class"><pre class="language-text"><code>// Create an objectStore
+console.log(&quot;Creating objectStore&quot;)
+dataBase.createObjectStore(&quot;elephants&quot;);
+
+</code></pre></div><p>在这里，您创建一个ObjectStore，您将存储数据 - 或者在我们的例子中，文件 - 并且一旦创建，您不需要重新创建它，只需更新其内容即可。</p> <h3 id="_3、将图像文件检索为blob"><a href="#_3、将图像文件检索为blob" aria-hidden="true" class="header-anchor">#</a> 3、将图像文件检索为blob</h3> <div class="language- extra-class"><pre class="language-text"><code>// Create XHR
+var xhr = new XMLHttpRequest(),
+    blob;
+
+xhr.open(&quot;GET&quot;, &quot;elephant.png&quot;, true);
+// Set the responseType to blob
+xhr.responseType = &quot;blob&quot;;
+
+xhr.addEventListener(&quot;load&quot;, function () {
+    if (xhr.status === 200) {
+        console.log(&quot;Image retrieved&quot;);
+        
+        // File as response
+        blob = xhr.response;
+
+        // Put the received blob into IndexedDB
+        putElephantInDb(blob);
+    }
+}, false);
+// Send XHR
+xhr.send();
+</code></pre></div><p>此代码直接将文件的内容作为blob获取。目前只支持Firefox。 收到整个文件后，将blob发送到函数以将其存储在数据库中。</p> <h3 id="_4、初始化一个数据库事物"><a href="#_4、初始化一个数据库事物" aria-hidden="true" class="header-anchor">#</a> 4、初始化一个数据库事物</h3> <div class="language- extra-class"><pre class="language-text"><code>
+// Open a transaction to the database
+var transaction = db.transaction([&quot;elephants&quot;], IDBTransaction.READ_WRITE);
+
+</code></pre></div><p>要开始向数据库写入内容，您需要使用objectStore名称和要执行的操作类型（在本例中为read和write）启动事务。</p> <h3 id="_5、保存图像blob到数据库中去"><a href="#_5、保存图像blob到数据库中去" aria-hidden="true" class="header-anchor">#</a> 5、保存图像blob到数据库中去</h3> <div class="language- extra-class"><pre class="language-text"><code>// Put the blob into the dabase
+transaction.objectStore(&quot;elephants&quot;).put(blob, &quot;image&quot;);
+
+</code></pre></div><p>一旦事务到位，您将获得对所需objectStore的引用，然后将您的blob放入其中并为其提供密钥。</p> <h3 id="_6、读出保存的文件并从中创建objecturl并将其设置为页面中图像元素的src"><a href="#_6、读出保存的文件并从中创建objecturl并将其设置为页面中图像元素的src" aria-hidden="true" class="header-anchor">#</a> 6、读出保存的文件并从中创建ObjectURL并将其设置为页面中图像元素的src</h3> <div class="language- extra-class"><pre class="language-text"><code>// Retrieve the file that was just stored
+transaction.objectStore(&quot;elephants&quot;).get(&quot;image&quot;).onsuccess = function (event) {
+    var imgFile = event.target.result;
+    console.log(&quot;Got elephant!&quot; + imgFile);
+
+    // Get window.URL object
+    var URL = window.URL || window.webkitURL;
+
+    // Create and revoke ObjectURL
+    var imgURL = URL.createObjectURL(imgFile);
+
+    // Set img src to ObjectURL
+    var imgElephant = document.getElementById(&quot;elephant&quot;);
+    imgElephant.setAttribute(&quot;src&quot;, imgURL);
+
+    // Revoking ObjectURL
+    URL.revokeObjectURL(imgURL);
+};
+</code></pre></div><p>使用相同的事务来获取刚刚存储的图像文件，然后创建一个objectURL并将其设置为页面中图像的src。
+例如，这也可以是一个附加到脚本元素的JavaScript文件，然后它将解析JavaScript。</p> <h3 id="最后完整代码"><a href="#最后完整代码" aria-hidden="true" class="header-anchor">#</a> 最后完整代码</h3> <div class="language- extra-class"><pre class="language-text"><code>(function () {
+    // IndexedDB
+    var indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.OIndexedDB || window.msIndexedDB,
+        IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.OIDBTransaction || window.msIDBTransaction,
+        dbVersion = 1.0;
+
+    // Create/open database
+    var request = indexedDB.open(&quot;elephantFiles&quot;, dbVersion),
+        db,
+        createObjectStore = function (dataBase) {
+            // Create an objectStore
+            console.log(&quot;Creating objectStore&quot;)
+            dataBase.createObjectStore(&quot;elephants&quot;);
+        },
+
+        getImageFile = function () {
+            // Create XHR
+            var xhr = new XMLHttpRequest(),
+                blob;
+
+            xhr.open(&quot;GET&quot;, &quot;elephant.png&quot;, true);
+            // Set the responseType to blob
+            xhr.responseType = &quot;blob&quot;;
+
+            xhr.addEventListener(&quot;load&quot;, function () {
+                if (xhr.status === 200) {
+                    console.log(&quot;Image retrieved&quot;);
+                    
+                    // Blob as response
+                    blob = xhr.response;
+                    console.log(&quot;Blob:&quot; + blob);
+
+                    // Put the received blob into IndexedDB
+                    putElephantInDb(blob);
+                }
+            }, false);
+            // Send XHR
+            xhr.send();
+        },
+
+        putElephantInDb = function (blob) {
+            console.log(&quot;Putting elephants in IndexedDB&quot;);
+
+            // Open a transaction to the database
+            var transaction = db.transaction([&quot;elephants&quot;], IDBTransaction.READ_WRITE);
+
+            // Put the blob into the dabase
+            var put = transaction.objectStore(&quot;elephants&quot;).put(blob, &quot;image&quot;);
+
+            // Retrieve the file that was just stored
+            transaction.objectStore(&quot;elephants&quot;).get(&quot;image&quot;).onsuccess = function (event) {
+                var imgFile = event.target.result;
+                console.log(&quot;Got elephant!&quot; + imgFile);
+
+                // Get window.URL object
+                var URL = window.URL || window.webkitURL;
+
+                // Create and revoke ObjectURL
+                var imgURL = URL.createObjectURL(imgFile);
+
+                // Set img src to ObjectURL
+                var imgElephant = document.getElementById(&quot;elephant&quot;);
+                imgElephant.setAttribute(&quot;src&quot;, imgURL);
+
+                // Revoking ObjectURL
+                URL.revokeObjectURL(imgURL);
+            };
+        };
+
+    request.onerror = function (event) {
+        console.log(&quot;Error creating/accessing IndexedDB database&quot;);
+    };
+
+    request.onsuccess = function (event) {
+        console.log(&quot;Success creating/accessing IndexedDB database&quot;);
+        db = request.result;
+
+        db.onerror = function (event) {
+            console.log(&quot;Error creating/accessing IndexedDB database&quot;);
+        };
+        
+        // Interim solution for Google Chrome to create an objectStore. Will be deprecated
+        if (db.setVersion) {
+            if (db.version != dbVersion) {
+                var setVersion = db.setVersion(dbVersion);
+                setVersion.onsuccess = function () {
+                    createObjectStore(db);
+                    getImageFile();
+                };
+            }
+            else {
+                getImageFile();
+            }
+        }
+        else {
+            getImageFile();
+        }
+    }
+    
+    // For future use. Currently only in latest Firefox versions
+    request.onupgradeneeded = function (event) {
+        createObjectStore(event.target.result);
+    };
+})();
+
+
+</code></pre></div><h3 id="浏览器支持"><a href="#浏览器支持" aria-hidden="true" class="header-anchor">#</a> 浏览器支持</h3> <ul><li><a href="https://caniuse.com/#search=URL" target="_blank" rel="noopener noreferrer">URL API支持性<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <p><img src="401F5717CD934E3EB7A58F183F382743" alt="image"></p> <ul><li><a href="https://caniuse.com/#search=indexDb" target="_blank" rel="noopener noreferrer">indexDb<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <p><img src="AA17D5E1C0DA408CA69BA58E11565B84" alt="image"></p> <h3 id="github源码"><a href="#github源码" aria-hidden="true" class="header-anchor">#</a> <a href="https://github.com/robnyman/robnyman.github.com/tree/master/html5demos/indexeddb" target="_blank" rel="noopener noreferrer">Github源码<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">3/16/2020, 12:11:08 AM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.8f18e5fd.js" defer></script><script src="/assets/js/27.abcfd977.js" defer></script>
+  </body>
+</html>

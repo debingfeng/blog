@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>关于Vue项目开发规范 | 一兵的博客</title>
+    <meta name="description" content="不畏浮云遮望眼，直挂云帆济沧海！">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.52b48649.css" as="style"><link rel="preload" href="/assets/js/app.8f18e5fd.js" as="script"><link rel="preload" href="/assets/js/83.cc46616b.js" as="script"><link rel="prefetch" href="/assets/js/10.71f09648.js"><link rel="prefetch" href="/assets/js/100.3acc8c3a.js"><link rel="prefetch" href="/assets/js/101.8f71d491.js"><link rel="prefetch" href="/assets/js/102.6c1184ca.js"><link rel="prefetch" href="/assets/js/11.364bb21f.js"><link rel="prefetch" href="/assets/js/12.1cb022b8.js"><link rel="prefetch" href="/assets/js/13.335bb278.js"><link rel="prefetch" href="/assets/js/14.f2baee24.js"><link rel="prefetch" href="/assets/js/15.cf6c6320.js"><link rel="prefetch" href="/assets/js/16.7a462aaf.js"><link rel="prefetch" href="/assets/js/17.543ddbc3.js"><link rel="prefetch" href="/assets/js/18.e2fddc95.js"><link rel="prefetch" href="/assets/js/19.4b29315e.js"><link rel="prefetch" href="/assets/js/2.8d9a8772.js"><link rel="prefetch" href="/assets/js/20.17236317.js"><link rel="prefetch" href="/assets/js/21.57a4719e.js"><link rel="prefetch" href="/assets/js/22.11e5b2ff.js"><link rel="prefetch" href="/assets/js/23.e9e1edfe.js"><link rel="prefetch" href="/assets/js/24.12e5ccb4.js"><link rel="prefetch" href="/assets/js/25.82d489d0.js"><link rel="prefetch" href="/assets/js/26.0e09b21f.js"><link rel="prefetch" href="/assets/js/27.abcfd977.js"><link rel="prefetch" href="/assets/js/28.4716e22e.js"><link rel="prefetch" href="/assets/js/29.f589746e.js"><link rel="prefetch" href="/assets/js/3.570ec1d8.js"><link rel="prefetch" href="/assets/js/30.5f5bc6ba.js"><link rel="prefetch" href="/assets/js/31.90d2c347.js"><link rel="prefetch" href="/assets/js/32.0bef948f.js"><link rel="prefetch" href="/assets/js/33.2a6c6aa7.js"><link rel="prefetch" href="/assets/js/34.900a0b5f.js"><link rel="prefetch" href="/assets/js/35.12d6f746.js"><link rel="prefetch" href="/assets/js/36.ac774b00.js"><link rel="prefetch" href="/assets/js/37.ef05dd90.js"><link rel="prefetch" href="/assets/js/38.939c6332.js"><link rel="prefetch" href="/assets/js/39.353619f6.js"><link rel="prefetch" href="/assets/js/4.a4cfb050.js"><link rel="prefetch" href="/assets/js/40.0b129163.js"><link rel="prefetch" href="/assets/js/41.7176df99.js"><link rel="prefetch" href="/assets/js/42.b03adce3.js"><link rel="prefetch" href="/assets/js/43.098ca71d.js"><link rel="prefetch" href="/assets/js/44.bf752f35.js"><link rel="prefetch" href="/assets/js/45.b7ef827e.js"><link rel="prefetch" href="/assets/js/46.48d10767.js"><link rel="prefetch" href="/assets/js/47.8e1f6691.js"><link rel="prefetch" href="/assets/js/48.02fabbe2.js"><link rel="prefetch" href="/assets/js/49.f47ebe04.js"><link rel="prefetch" href="/assets/js/5.5ed2dc47.js"><link rel="prefetch" href="/assets/js/50.ba1abd6c.js"><link rel="prefetch" href="/assets/js/51.e4293525.js"><link rel="prefetch" href="/assets/js/52.9b458637.js"><link rel="prefetch" href="/assets/js/53.5cec51ad.js"><link rel="prefetch" href="/assets/js/54.985aca3f.js"><link rel="prefetch" href="/assets/js/55.38e8c848.js"><link rel="prefetch" href="/assets/js/56.d0dd0b3d.js"><link rel="prefetch" href="/assets/js/57.e32ed0ba.js"><link rel="prefetch" href="/assets/js/58.71ec5ec4.js"><link rel="prefetch" href="/assets/js/59.220a226d.js"><link rel="prefetch" href="/assets/js/6.4c6d031d.js"><link rel="prefetch" href="/assets/js/60.6681db6e.js"><link rel="prefetch" href="/assets/js/61.14e902b7.js"><link rel="prefetch" href="/assets/js/62.1104f7db.js"><link rel="prefetch" href="/assets/js/63.f525feb0.js"><link rel="prefetch" href="/assets/js/64.1dd8e9d8.js"><link rel="prefetch" href="/assets/js/65.896d29c9.js"><link rel="prefetch" href="/assets/js/66.6dfeabff.js"><link rel="prefetch" href="/assets/js/67.a9c6ceeb.js"><link rel="prefetch" href="/assets/js/68.d165b7df.js"><link rel="prefetch" href="/assets/js/69.9c31997f.js"><link rel="prefetch" href="/assets/js/7.8763523a.js"><link rel="prefetch" href="/assets/js/70.d6e782bb.js"><link rel="prefetch" href="/assets/js/71.cc306843.js"><link rel="prefetch" href="/assets/js/72.ea3b7336.js"><link rel="prefetch" href="/assets/js/73.1400043a.js"><link rel="prefetch" href="/assets/js/74.717f95d1.js"><link rel="prefetch" href="/assets/js/75.01c737f8.js"><link rel="prefetch" href="/assets/js/76.9d9cdf15.js"><link rel="prefetch" href="/assets/js/77.8a54ea5b.js"><link rel="prefetch" href="/assets/js/78.a843b7d3.js"><link rel="prefetch" href="/assets/js/79.0ccb3037.js"><link rel="prefetch" href="/assets/js/8.a71b4a6b.js"><link rel="prefetch" href="/assets/js/80.02161799.js"><link rel="prefetch" href="/assets/js/81.7958bf86.js"><link rel="prefetch" href="/assets/js/82.72fe4c77.js"><link rel="prefetch" href="/assets/js/84.2884b510.js"><link rel="prefetch" href="/assets/js/85.daa2ce92.js"><link rel="prefetch" href="/assets/js/86.adae1799.js"><link rel="prefetch" href="/assets/js/87.46d6479c.js"><link rel="prefetch" href="/assets/js/88.b4bea9b3.js"><link rel="prefetch" href="/assets/js/89.c97cf353.js"><link rel="prefetch" href="/assets/js/9.3cb6b278.js"><link rel="prefetch" href="/assets/js/90.d76d7f38.js"><link rel="prefetch" href="/assets/js/91.0b44c3d0.js"><link rel="prefetch" href="/assets/js/92.b306e484.js"><link rel="prefetch" href="/assets/js/93.49777a1d.js"><link rel="prefetch" href="/assets/js/94.043d967e.js"><link rel="prefetch" href="/assets/js/95.5db7943e.js"><link rel="prefetch" href="/assets/js/96.71ab4028.js"><link rel="prefetch" href="/assets/js/97.417d6475.js"><link rel="prefetch" href="/assets/js/98.3606a8f3.js"><link rel="prefetch" href="/assets/js/99.e84f4f12.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.52b48649.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">一兵的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yuque.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about-me.html" class="nav-link">关于我</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yuque.com/debingfeng" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about-me.html" class="nav-link">关于我</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>H5与Hybrid</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/hybrid/h5/" class="sidebar-link">H5开发</a></li><li><a href="/hybrid/native/" class="sidebar-link">Hybrid混合开发</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/css/" class="sidebar-link">CSS目录</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Javascript</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/javascript/" class="sidebar-link">Javascript</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>前端框架</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vue/" class="sidebar-link">Vue相关</a></li><li><a href="/react/" class="sidebar-link">React相关</a></li><li><a href="/angular/" class="sidebar-link">Angular相关</a></li><li><a href="/node/" class="sidebar-link">Node相关</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>团队协作与工程化</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/structure/" class="sidebar-link">团队协作与工程化</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>服务器开发</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/server/" class="sidebar-link">服务器开发</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>计算机基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/computer/" class="sidebar-link">计算机基础</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="关于vue项目开发规范"><a href="#关于vue项目开发规范" aria-hidden="true" class="header-anchor">#</a> 关于Vue项目开发规范</h1> <p></p><div class="table-of-contents"><ul><li><a href="#命名约定">命名约定</a><ul><li><a href="#工程项目命名">工程项目命名</a></li><li><a href="#组件命名">组件命名</a></li><li><a href="#js-文件">JS 文件</a></li><li><a href="#view视图文件">View视图文件</a></li></ul></li><li><a href="#项目结构参考">项目结构参考</a></li><li><a href="#开发约定与注意">开发约定与注意</a><ul><li><a href="#组件的-data-必须是一个函数。">组件的 data 必须是一个函数。</a></li><li><a href="#prop-定义应该尽量详细。">Prop 定义应该尽量详细。</a></li><li><a href="#为v-for设置key值">为v-for设置key值</a></li><li><a href="#避免-v-if-和-v-for-用在一起">避免 v-if 和 v-for 用在一起</a></li><li><a href="#私有属性名">私有属性名</a></li><li><a href="#础组件名">础组件名</a></li><li><a href="#单例组件名">单例组件名</a></li><li><a href="#紧密耦合的组件名">紧密耦合的组件名</a></li><li><a href="#组件名中的单词顺序">组件名中的单词顺序</a></li><li><a href="#多个特性的元素">多个特性的元素</a></li><li><a href="#简化计算属性">简化计算属性</a></li><li><a href="#指令缩写">指令缩写</a></li><li><a href="#元素特性的顺序">元素特性的顺序</a></li><li><a href="#单文件组件的顶级元素的顺序">单文件组件的顶级元素的顺序</a></li></ul></li><li><a href="#参考资料">参考资料</a></li></ul></div><p></p> <h2 id="命名约定"><a href="#命名约定" aria-hidden="true" class="header-anchor">#</a> 命名约定</h2> <h3 id="工程项目命名"><a href="#工程项目命名" aria-hidden="true" class="header-anchor">#</a> 工程项目命名</h3> <p>基于对我们现有的发布流程，多个单词建议统一用下划线的形式。</p> <ul><li>例如</li></ul> <div class="language- extra-class"><pre class="language-text"><code>my-project
+
+</code></pre></div><h3 id="组件命名"><a href="#组件命名" aria-hidden="true" class="header-anchor">#</a> 组件命名</h3> <h4 id="文件夹与文件名称"><a href="#文件夹与文件名称" aria-hidden="true" class="header-anchor">#</a> 文件夹与文件名称</h4> <p>单个以小写字母开头，多个单词以横线连接，遵循横线连接 (kebab-case)的原则。</p> <ul><li>例子</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 单个单词文件夹与文件名
+dialog/index.vue
+
+// 单文件
+dialog.vue
+
+// 多个单词：自动完成组件
+auto-complete/index.vue
+auto-complete.vue
+
+
+</code></pre></div><ul><li>参考资料</li></ul> <blockquote><p><a href="https://github.com/ElemeFE/element/tree/dev/packages" target="_blank" rel="noopener noreferrer">element-ui组件命名<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <blockquote><p><a href="https://github.com/iview/iview/tree/2.0/src/components" target="_blank" rel="noopener noreferrer">iview-2.0组件命名<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <h3 id="js-文件"><a href="#js-文件" aria-hidden="true" class="header-anchor">#</a> JS 文件</h3> <p>所有的.js文件都遵循横线连接 (kebab-case)</p> <ul><li>例子</li></ul> <div class="language- extra-class"><pre class="language-text"><code>
+@/src/utils/open-util.js
+
+</code></pre></div><h3 id="view视图文件"><a href="#view视图文件" aria-hidden="true" class="header-anchor">#</a> View视图文件</h3> <p>在views文件下，代表路由的.vue文件都使用横线连接 (kebab-case)，代表路由的文件夹也是使用同样的规则。</p> <h4 id="为什么不选择以大写字母开头"><a href="#为什么不选择以大写字母开头" aria-hidden="true" class="header-anchor">#</a> 为什么不选择以大写字母开头</h4> <ul><li><p>1）引用时还需要切换大小写</p></li> <li><p>2）避免大小写敏感的问题</p></li> <li><p>3）所有文件风格都统一了，不需要切换。</p></li></ul> <h4 id="为什么选择以横线连接-kebab-case-命名的原因"><a href="#为什么选择以横线连接-kebab-case-命名的原因" aria-hidden="true" class="header-anchor">#</a> 为什么选择以横线连接 (kebab-case)命名的原因</h4> <ul><li><p>横线连接 (kebab-case) 也是官方推荐的命名规范之一 文档
+views下的.vue文件代表的是一个路由，所以它需要和component进行区分</p></li> <li><p>页面的url 也都是横线连接的，比如https://www.xxx.com/wear-app-store，所以路由对应的view应该要保持统一</p></li> <li><p>没有大小写敏感问题</p></li></ul> <h2 id="项目结构参考"><a href="#项目结构参考" aria-hidden="true" class="header-anchor">#</a> 项目结构参考</h2> <ul><li>参考vue-cli3生成的项目</li></ul> <div class="language- extra-class"><pre class="language-text"><code>/my-project
+
+    /public
+    /src
+        /assets
+            /imgs/
+            /fonts/
+            /scss/
+            /...
+        
+        /common/ 公共js
+        
+        /components/ 组件目录
+        
+        /i18n/ 国际化目录
+    
+        /mixins/ 混合目录
+        
+        /service/ 接口服务
+        
+        /views/ 路由组件
+        
+        其他待补充完善
+</code></pre></div><h2 id="开发约定与注意"><a href="#开发约定与注意" aria-hidden="true" class="header-anchor">#</a> 开发约定与注意</h2> <h3 id="组件的-data-必须是一个函数。"><a href="#组件的-data-必须是一个函数。" aria-hidden="true" class="header-anchor">#</a> 组件的 data 必须是一个函数。</h3> <p>当在组件中使用 data 属性的时候 (除了 new Vue 外的任何地方)，它的值必须是返回一个对象的函数。
+<a href="https://cn.vuejs.org/v2/style-guide/index.html#%E7%BB%84%E4%BB%B6%E6%95%B0%E6%8D%AE-%E5%BF%85%E8%A6%81" target="_blank" rel="noopener noreferrer">参考官方指南详细<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="prop-定义应该尽量详细。"><a href="#prop-定义应该尽量详细。" aria-hidden="true" class="header-anchor">#</a> Prop 定义应该尽量详细。</h3> <p>在你提交的代码中，prop 的定义应该尽量详细，至少需要指定其类型。</p> <h3 id="为v-for设置key值"><a href="#为v-for设置key值" aria-hidden="true" class="header-anchor">#</a> 为v-for设置key值</h3> <p>在组件上总是必须用 key 配合 v-for，以便维护内部组件及其子树的状态。甚至在元素上维护可预测的行为，比如动画中的对象固化 (object constancy)，也是一种好的做法。
+<a href="https://cn.vuejs.org/v2/style-guide/index.html#%E4%B8%BA-v-for-%E8%AE%BE%E7%BD%AE%E9%94%AE%E5%80%BC-%E5%BF%85%E8%A6%81" target="_blank" rel="noopener noreferrer">参考官方指南详细<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="避免-v-if-和-v-for-用在一起"><a href="#避免-v-if-和-v-for-用在一起" aria-hidden="true" class="header-anchor">#</a> 避免 v-if 和 v-for 用在一起</h3> <p>一般我们在两种常见的情况下会倾向于这样做：</p> <p>为了过滤一个列表中的项目 (比如 v-for=&quot;user in users&quot; v-if=&quot;user.isActive&quot;)。在这种情形下，请将 users 替换为一个计算属性 (比如 activeUsers)，让其返回过滤后的列表。</p> <p>为了避免渲染本应该被隐藏的列表 (比如 v-for=&quot;user in users&quot; v-if=&quot;shouldShowUsers&quot;)。这种情形下，请将 v-if 移动至容器元素上 (比如 ul, ol)。</p> <p><a href="https://cn.vuejs.org/v2/style-guide/index.html#%E9%81%BF%E5%85%8D-v-if-%E5%92%8C-v-for-%E7%94%A8%E5%9C%A8%E4%B8%80%E8%B5%B7-%E5%BF%85%E8%A6%81" target="_blank" rel="noopener noreferrer">参考官方指南详细<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="私有属性名"><a href="#私有属性名" aria-hidden="true" class="header-anchor">#</a> 私有属性名</h3> <p>使用模块作用域保持不允许外部访问的函数的私有性。如果无法做到这一点，就始终为插件、混入等不考虑作为对外公共 API 的自定义私有属性使用 $_ 前缀。并附带一个命名空间以回避和其它作者的冲突 (比如 $<em>yourPluginName</em>)。</p> <p><a href="https://cn.vuejs.org/v2/style-guide/index.html#%E7%A7%81%E6%9C%89%E5%B1%9E%E6%80%A7%E5%90%8D-%E5%BF%85%E8%A6%81" target="_blank" rel="noopener noreferrer">参考官方指南详细<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="础组件名"><a href="#础组件名" aria-hidden="true" class="header-anchor">#</a> 础组件名</h3> <p>应用特定样式和约定的基础组件 (也就是展示类的、无逻辑的或无状态的组件) 应该全部以一个特定的前缀开头，比如 Base、App 或 V。</p> <p><a href="https://cn.vuejs.org/v2/style-guide/index.html#%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E5%90%8D-%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener noreferrer">参考官方指南详细<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="单例组件名"><a href="#单例组件名" aria-hidden="true" class="header-anchor">#</a> 单例组件名</h3> <p><strong>只应该拥有单个活跃实例的组件应该以 The 前缀命名，以示其唯一性。</strong></p> <p>这不意味着组件只可用于一个单页面，而是每个页面只使用一次。这些组件永远不接受任何 prop，因为它们是为你的应用定制的，而不是它们在你的应用中的上下文。如果你发现有必要添加 prop，那就表明这实际上是一个可复用的组件，只是目前在每个页面里只使用一次。</p> <div class="language- extra-class"><pre class="language-text"><code>反示例
+
+components/
+|- Heading.vue
+|- MySidebar.vue
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>好的示例
+components/
+|- TheHeading.vue
+|- TheSidebar.vue
+
+</code></pre></div><h3 id="紧密耦合的组件名"><a href="#紧密耦合的组件名" aria-hidden="true" class="header-anchor">#</a> 紧密耦合的组件名</h3> <p><strong>和父组件紧密耦合的子组件应该以父组件名作为前缀命名。</strong></p> <p>如果一个组件只在某个父组件的场景下有意义，这层关系应该体现在其名字上。因为编辑器通常会按字母顺序组织文件，所以这样做可以把相关联的文件排在一起。</p> <h3 id="组件名中的单词顺序"><a href="#组件名中的单词顺序" aria-hidden="true" class="header-anchor">#</a> 组件名中的单词顺序</h3> <p>组件名应该以高级别的 (通常是一般化描述的) 单词开头，以描述性的修饰词结尾。</p> <div class="language- extra-class"><pre class="language-text"><code>反例
+components/
+|- ClearSearchButton.vue
+|- ExcludeFromSearchInput.vue
+|- LaunchOnStartupCheckbox.vue
+|- RunSearchButton.vue
+|- SearchInput.vue
+|- TermsCheckbox.vue
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>好例子
+components/
+|- SearchButtonClear.vue
+|- SearchButtonRun.vue
+|- SearchInputQuery.vue
+|- SearchInputExcludeGlob.vue
+|- SettingsCheckboxTerms.vue
+|- SettingsCheckboxLaunchOnStartup.vue
+</code></pre></div><p><a href="https://cn.vuejs.org/v2/style-guide/index.html#%E7%BB%84%E4%BB%B6%E5%90%8D%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D%E9%A1%BA%E5%BA%8F-%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener noreferrer">参考官方网站<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="多个特性的元素"><a href="#多个特性的元素" aria-hidden="true" class="header-anchor">#</a> 多个特性的元素</h3> <p><strong>多个特性的元素应该分多行撰写，每个特性一行。</strong></p> <p>在 JavaScript 中，用多行分隔对象的多个属性是很常见的最佳实践，因为这样更易读。模板和 JSX 值得我们做相同的考虑。</p> <div class="language- extra-class"><pre class="language-text"><code>反例
+&lt;img src=&quot;https://vuejs.org/images/logo.png&quot; alt=&quot;Vue Logo&quot;&gt;
+&lt;MyComponent foo=&quot;a&quot; bar=&quot;b&quot; baz=&quot;c&quot;/&gt;
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>好例子
+
+&lt;img
+  src=&quot;https://vuejs.org/images/logo.png&quot;
+  alt=&quot;Vue Logo&quot;
+&gt;
+&lt;MyComponent
+  foo=&quot;a&quot;
+  bar=&quot;b&quot;
+  baz=&quot;c&quot;
+/&gt;
+</code></pre></div><h3 id="简化计算属性"><a href="#简化计算属性" aria-hidden="true" class="header-anchor">#</a> 简化计算属性</h3> <p>应该把复杂计算属性分割为尽可能多的更简单的属性。</p> <div class="language- extra-class"><pre class="language-text"><code>反例
+computed: {
+  price: function () {
+    var basePrice = this.manufactureCost / (1 - this.profitMargin)
+    return (
+      basePrice -
+      basePrice * (this.discountPercent || 0)
+    )
+  }
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>好例子
+computed: {
+  basePrice: function () {
+    return this.manufactureCost / (1 - this.profitMargin)
+  },
+  discount: function () {
+    return this.basePrice * (this.discountPercent || 0)
+  },
+  finalPrice: function () {
+    return this.basePrice - this.discount
+  }
+}
+</code></pre></div><blockquote><p><a href="https://cn.vuejs.org/v2/style-guide/index.html#%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener noreferrer">参考官方解释<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <h3 id="指令缩写"><a href="#指令缩写" aria-hidden="true" class="header-anchor">#</a> 指令缩写</h3> <p>指令缩写 (用 : 表示 v-bind: 和用 @ 表示 v-on:) 应该要么都用要么都不用。</p> <h3 id="元素特性的顺序"><a href="#元素特性的顺序" aria-hidden="true" class="header-anchor">#</a> 元素特性的顺序</h3> <p>元素 (包括组件) 的特性应该有统一的顺序。</p> <p>这是我们为组件选项推荐的默认顺序。它们被划分为几大类，所以你也能知道新添加的自定义特性和指令应该放到哪里。</p> <p><a href="https://cn.vuejs.org/v2/style-guide/index.html#%E5%85%83%E7%B4%A0%E7%89%B9%E6%80%A7%E7%9A%84%E9%A1%BA%E5%BA%8F-%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener noreferrer">参考官方指南<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="单文件组件的顶级元素的顺序"><a href="#单文件组件的顶级元素的顺序" aria-hidden="true" class="header-anchor">#</a> 单文件组件的顶级元素的顺序</h3> <p><strong>单文件组件应该总是让 <script></script></strong></p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">3/16/2020, 12:11:08 AM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.8f18e5fd.js" defer></script><script src="/assets/js/83.cc46616b.js" defer></script>
+  </body>
+</html>
